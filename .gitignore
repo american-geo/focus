@@ -4,6 +4,7 @@ dist/
 bower_components/
 .idea/
 src/js/combined.js
+.DS_Store
 
 #remove temp
 src/publications/**/._*.png
