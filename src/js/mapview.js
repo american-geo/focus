@@ -45,6 +45,7 @@ Focus.Models.SceneModel = Backbone.Model.extend({
             layers: [],
             center: [0,0],
             zoom: 12,
+            maxZoom: 20,
             rotation: 0,
             pitch: 0
         }
@@ -737,6 +738,7 @@ Focus.Views.LeafletMapEngine = Focus.Views.MapEngine.extend({
                         iconSize: null,
                         iconAnchor: new L.Point(-5, 0)
                     },
+                    maxZoom: 22,
                     getMarker: function (location, options, record) {
                         var marker;
                         if (options.icon) {
