@@ -8,3 +8,5 @@ src/js/combined.js
 #remove temp
 src/publications/**/._*.png
 src/publications/**/._*.jpg
+
+.DS_Store
