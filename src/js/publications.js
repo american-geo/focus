@@ -23,6 +23,16 @@ Focus.Volumes = [
                 url: "publications/photoessays/oaxaca2/index.html",
                 location: [],
             },
+            {
+                type: "Feature Article",
+                title: "Shoreline change and its impact on coastal livelihoods in Navsari and Valsad districts of Gujarat, India",
+                author: "Ritika Prasad, Bhanwar Vishvendra Raj Singh",
+                description: "",
+                date: "10/25/22",
+                thumbnail: "publications/articles/india/images/fig2.jpg",
+                url: "publications/articles/india/index.html",
+                location: [],
+            },
         ],
     },
     {
