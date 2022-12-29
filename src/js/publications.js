@@ -4,6 +4,16 @@ Focus.Volumes = [
         number: 65,
         publications: [
             {
+                type: "Photo Essay",
+                title: "The State Fetish: Producing The Territorial State System at a World’s Fair",
+                author: "Natalie Koch",
+                description: "",
+                date: "12/29/22",
+                thumbnail: "publications/photoessays/uae/images/ExpoFig14.jpg",
+                url: "publications/photoessays/uae/index.html",
+                location: [],
+            },
+            {
                 type: "Feature Article",
                 title: "Lifeways and currents of change in the Peruvian Amazon: A 1000 km boat journey down the Ucayali River",
                 author: "Christian Abizaid, Oliver T. Coomes, Yoshito Takasaki",
