@@ -1,0 +1,1157 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>"Tragic January": Under a State of Emergency in Almaty, Kazakhstan</title>
+    <meta name="description"
+        content="FOCUS on Geography: Tragic January: Under a State of Emergency in Almaty, Kazakhstan">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="geography,map,kazakhstan">
+    <meta name="author" content="Derek Alderman">
+    <meta name="author" content="Joshua Inwood">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#fff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Mono:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link href="../../../css/combined.css" rel="stylesheet" type="text/css">
+    <script src="../../../js/vendor/modernizr-2.8.3.min.js"></script>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        #text {
+            background: #fff;
+            font-family: 'Roboto Mono', monospace;
+            color: #fff;
+        }
+
+        #text h2 {
+            font-family: 'Roboto Mono', monospace;
+            text-transform: none;
+            font-size: 32px;
+            font-weight: bold;
+            color: rgb(255, 255, 255) !important;
+            text-shadow: 1px 1px 3px rgb(39, 34, 10);
+        }
+
+        #text h3 {
+            font-family: 'Roboto Mono', monospace;
+            text-transform: none;
+            color: rgb(255, 255, 255) !important;
+        }
+
+        #nav,
+        #toggle-map {
+            background: rgba(0, 0, 0, 1);
+        }
+
+        span.place-text {
+            font-family: 'Roboto Mono', monospace;
+            color: #fff;
+        }
+
+        #text a,
+        a.location,
+        div.tooltip a {
+            color: rgba(255, 236, 45, 1);
+            border-bottom-color: rgba(255, 236, 45, 0.7);
+        }
+
+        #text a:hover,
+        a.location:hover,
+        div.tooltip a {
+            background: rgba(255, 236, 45, 0.1);
+            text-decoration: none;
+        }
+
+        path.line {
+            stroke: rgb(0, 171, 194) !important;
+        }
+
+        path.marker-path {
+            stroke: rgb(0, 171, 194) !important;
+            fill: rgb(0, 171, 194) !important;
+        }
+
+        progress::-webkit-progress-bar {
+            background-color: transparent;
+        }
+
+        progress::-webkit-progress-value {
+            background-color: rgba(59, 73, 104, 0.7);
+            -webkit-transition: width 0.5s ease-in-out;
+        }
+
+        progress::-moz-progress-bar {
+            background-color: rgba(255, 236, 45, 0.7);
+            transition: width 0.5s ease-in-out;
+            -moz-transition: width 0.5s ease-in-out;
+        }
+
+        progress::-ms-fill {
+            background-color: rgba(255, 236, 45, 0.7);
+            -ms-transition: width 0.5s ease-in-out;
+        }
+
+        svg text {
+            font-family: 'Roboto Mono', monospace;
+            font-size: 14px;
+            fill: #fff;
+            text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        .tooltip.bottom .tooltip-arrow,
+        .tooltip.bottom-left .tooltip-arrow,
+        .tooltip.bottom-right .tooltip-arrow {
+            border-bottom-color: rgb(255, 236, 45);
+        }
+
+        .tooltip.left .tooltip-arrow {
+            border-left-color: rgb(255, 236, 45);
+        }
+
+        .tooltip-inner {
+            background: rgb(255, 236, 45);
+            color: #000;
+        }
+
+        .tooltip-inner a.location,
+        #photo-caption a.location {
+            color: #000;
+            border-bottom-color: #000;
+        }
+
+        .author {
+            opacity: 100% !important;
+        }
+
+        div.figure {
+            background-position: 50% 0px;
+            height: 600px;
+        }
+
+        .dotstyle .sections li {
+            position: relative;
+            display: block;
+            float: left;
+            margin: 2px 17px;
+            width: 16px;
+            height: 12px;
+            cursor: pointer;
+        }
+
+        .dotstyle .sections li a {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 8px;
+            outline: 0;
+            border-radius: 0px;
+            background-color: #fff;
+            background-color: rgba(255, 255, 255, .3);
+            text-indent: -999em;
+            cursor: pointer;
+            position: absolute;
+            padding: 0;
+        }
+
+        @media (max-height: 768px) and (min-width: 900px) {
+            .dotstyle .sections li {
+                height: 10px !important;
+            }
+        }
+    </style>
+</head>
+
+<body class="scrolled">
+    <progress></progress>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div id="nav" class="title-hidden dotstyle dotstyle-scaleup">
+        <ul class="nav share">
+            <li>
+                <a data-toggle="tooltip" title="Share on Twitter"
+                    href="https://twitter.com/intent/tweet?status=[TITLE]+[URL]" class="twitter-share-button"><span
+                        class="fa fa-twitter"></span></a>
+            </li>
+            <li>
+                <a data-toggle="tooltip" title="Share on Facebook"
+                    href="http://www.facebook.com/sharer/sharer.php?u=[URL]&title=[TITLE]"><span
+                        class="share-button fa fa-facebook-official"></span></a>
+            </li>
+            <li>
+                <a data-toggle="tooltip" title="Share via E-mail"
+                    href="mailto:?subject=[TITLE]&body=[TITLE]: [URL]"><span
+                        class="share-button fa fa-envelope"></span></a>
+            </li>
+        </ul>
+        <ul class="nav previous">
+            <li class="previous">
+                <a href="#"><span class="fa fa-chevron-up"></span></a>
+            </li>
+        </ul>
+        <ul class="nav sections">
+        </ul>
+        <ul class="nav next">
+            <li class="next">
+                <a href="#"><span class="fa fa-chevron-down"></span></a>
+            </li>
+        </ul>
+    </div>
+    <!-- Add your site or application content here -->
+    <div id="background"></div>
+    <div id="map" class="photo-essay"></div>
+    <div id="overview-map" class="title-hidden transparent"></div>
+    <div id="foreground"></div>
+    <div id="photos">
+        <div id="photo-caption" class="title-hidden"></div>
+    </div>
+    <div id="shadow"></div>
+    <div id="toggle-map" class="focus-green"><span class="fa fa-map-o" style="color: #fff; margin: 8px;"></span></div>
+    <div id="main-nav" class="light">
+        <div id="menu-icon-wrapper2" class="menu-icon-wrapper" style="visibility: visible;">
+            <svg width="1000px" height="1000px">
+                <path id="pathD" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"
+                    style="stroke-dashoffset: 5803.15; stroke-dasharray: 2901.57, 2981.57, 240;"></path>
+                <path id="pathE" d="M 300 500 L 700 500"
+                    style="stroke-dashoffset: 800; stroke-dasharray: 400, 480, 240;"></path>
+                <path id="pathF" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"
+                    style="stroke-dashoffset: 6993.11; stroke-dasharray: 3496.56, 3576.56, 240;"></path>
+            </svg>
+
+            <div id="menu-icon-trigger2" class="menu-icon-trigger"></div>
+        </div>
+        <a class="main-link" href="../../../index.html"><img id="logo" src="../../../img/focus-logo.svg" /></a>
+        <ul class="nav share">
+            <li>
+                <a data-toggle="tooltip" title="Share on Twitter"
+                    href="https://twitter.com/intent/tweet?status=[TITLE]+[URL]" class="twitter-share-button"><span
+                        class="fa fa-twitter"></span></a>
+            </li>
+            <li>
+                <a data-toggle="tooltip" title="Share on Facebook"
+                    href="http://www.facebook.com/sharer/sharer.php?u=[URL]&title=[TITLE]"><span
+                        class="share-button fa fa-facebook-official"></span></a>
+            </li>
+            <li>
+                <a data-toggle="tooltip" title="Share via E-mail"
+                    href="mailto:?subject=[TITLE]&body=[TITLE]: [URL]"><span
+                        class="share-button fa fa-envelope"></span></a>
+            </li>
+        </ul>
+        <div id="menu" class="container-fluid"></div>
+    </div>
+    <div id="text" class="photo-essay title-hidden">
+        <div class="content scenes">
+            <section id="introduction" class="scene" data-scene-id="place0" title="Introduction">
+                <h2 class="title title-photo"
+                    style="overflow: hidden; background-image: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1)), url(img/fig24.jpg);">
+                    "Tragic January": Under a State of Emergency in Almaty, Kazakstan
+                </h2>
+                <div class="author">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 col-xs-3 col-sm-2 col-md-2 col-lg-2">
+                                <img class="author-photo" style="position: relative; width: 100%;"
+                                    src="img/author.jpg" />
+                            </div>
+                            <div class="col-12 col-xs-9 col-sm-10 col-md-10 col-lg-10">
+                                <div class="row">
+                                    <div class="col-12 col-xs-12 name" style="color:white">
+                                        Kristopher White
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-xs-12 organization" style="color:white">
+                                        KIMEP University
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="citation" style="color:white"><span class="citation-label">DOI:</span>
+                                        10.21690/foge/2022.65.3p</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3>Introduction</h3>
+                <p>
+                    In early January 2022, protests, demonstrations, and subsequent violence vaulted the republic of
+                    Kazakhstan to the rare positional forefront of global news coverage. There, pundits and regional
+                    experts based outside of Kazakhstan discussed internal power struggles between political elites
+                    (current President Kassym-Jomart Tokayev and his predecessor, first president and longtime ruler
+                    Nursultan Nazarbayev), Vladimir Putin and the geopolitical influence of Russia in former Soviet
+                    space, previous so-called ‘Color’ revolutions, and the first ever deployment of Russian-led
+                    Collective Security Treaty Organization (CSTO) troops within a member state. Meanwhile, the
+                    overwhelming majority of local residents of <a href="#" class="location"
+                        data-layer-id="almaty">Almaty</a>, Kazakhstan’s largest and most cosmopolitan city,
+                    remained locked within their homes for days and days with no internet access, and an effective
+                    information blackout interrupted by the occasional domestic SMS message or mobile phone call.
+                    Communicating with anyone outside of Kazakhstan was impossible. Precautionary rationing of food and
+                    water added significant anxiety and uncertainty, not knowing when, or even if, order would be
+                    restored.
+                </p>
+
+                <p>
+                    The origin appears to have been peaceful protests in <a href="#" class="location"
+                        data-layer-id="zhanaozen">Zhanaozen, Kazakhstan</a>, against the government’s
+                    decision to remove a subsidy for liquefied petroleum gas (LPG), effectively doubling the cost of
+                    this popular fuel overnight. Soon protests diffused spatially across Kazakhstan, in time revealing
+                    discontent with a whole host of social ills. In Almaty, unknown groups appeared to hijack the
+                    protests. Once violence escalated, government troops responded with force. The events resulted in
+                    more than 200 deaths and tens of thousands of arrests. For a more detailed timeline of events, see
+                    e.g. Al Jazeera English, 2022.
+                </p>
+
+                <p>
+                    This photo essay presents images, all made by the author between January 11 and 15, 2022,
+                    documenting the aftermath of violence during a state of emergency in central Almaty, Kazakhstan.
+                    Accompanying text is augmented by the author’s own personal experiences and observations, as well as
+                    interview responses from Kazakhstani citizens and Almaty residents. At the time of writing much
+                    remains uncertain. Who exactly hijacked the peaceful demonstrations seems to be the major
+                    uncertainty, with the government claiming international terrorists, others suggesting actors loyal
+                    to former president Nursultan Nazarbayev. Even the nomenclature assigned to these events is unclear.
+                    Local outlets and the government appear to be using the term ‘Tragic January’ (Kazakhstan Embassy,
+                    2022).
+                </p>
+            </section>
+            <section id="1" class="scene photo-scene" data-scene-id="place1" title="1">
+
+
+
+
+                <div class="figure contain" style="background-image:url(img/fig1.jpg);">
+                </div>
+                <div class="caption">
+                    Figure 1: Burned Akimat (Mayor's Office, city govt.) building of Almaty, Kazakhstan
+                </div>
+
+
+                <p>
+                    This large city government building faces north across Satpaev Street and overlooks Independence
+                    Square, what most refer to as New Square (as opposed to the Old, Soviet-era square elsewhere in the
+                    city). The prominent feature in this square is the obelisk monument (behind the photographer and
+                    unseen here, though shown best in Figure 20 below) to Kazakhstan’s independence, December 16, 1991.
+                    Adding to this image’s shock value is the charred Kazakhstani state flag and state emblem at the
+                    building’s center top. This part of the city became, by the night of January 4, the epicenter of
+                    violence and the focus of global television broadcasts. Occasional gunfire could still be heard in
+                    this part of the city into January 6 and 7. Marat1, a pension-aged man living close to New Square,
+                    described a harrowing experience. Thinking the explosions and gunfire were fireworks for someone’s
+                    wedding, “I opened my window to try and see what was going on. I soon knew it wasn’t fireworks. I
+                    saw crowds and crowds of people. Then tear gas rushed into my apartment and I felt stinging pain in
+                    my eyes. I tried over and over to wash my face and eyes, but could not stop crying.”
+                </p>
+
+            </section>
+            <section id="2" class="scene photo-scene" data-scene-id="place2" title="2">
+
+                <div class="figure contain" style="background-image:url(img/fig2.jpg);"></div>
+                <div class="caption">
+                    Figure 2: Black spray paint, Kazakh, Alash power
+                </div>
+
+                <p>
+                    In black spray paint, and in Kazakh language, this image is another prominent visual element of the
+                    previous scene above. “Kazakh” to the left and “Alash Power” to the right. According to legend,
+                    Alash was the common ancestor from whom the three Kazakh zhuz (tribes) descended. In the early
+                    twentieth century Kazakh intelligentsia formed a democratic Alash Orda political party championing
+                    unity, national identity, and independence for Kazakhs. Today, Alash has come to represent a certain
+                    ethnic cohesion and strength. This expression of Kazakh nationalism (as opposed to Kazakhstani)
+                    appears to indicate the primacy of ethnicity ahead of the State. Such sentiment may come at the
+                    expense of the more than 100 other ethnicities calling Kazakhstan home.
+                </p>
+
+            </section>
+            <section id="3" class="scene photo-scene" data-scene-id="place3" title="3">
+                <div class="figure contain" style="background-image:url(img/fig3.jpg);"></div>
+                <div class="caption">
+                    Figure 3: Burned automobiles
+                </div>
+                <p>
+                    Behind a telecommunications building that abuts Independence Square, this parking area featured a
+                    number of burned out cars and evidence of façade-scarring flames. The automobile to the right
+                    features a hand-written note in Russian language, “Request – Please do not remove my car from this
+                    accident scene. Call me.” Followed by the owner’s name and mobile phone number. This note offers a
+                    humanizing reminder of the violence and damage that impacted human beings, ‘ordinary’ people who are
+                    living and working in Almaty, peacefully, to provide for themselves and their families.
+                </p>
+            </section>
+            <section id="4" class="scene photo-scene" data-scene-id="place4" title="4">
+                <div class="figure contain" style="background-image:url(img/fig4.jpg);"></div>
+
+                <div class="caption">
+                    Figure 4: Rendition of Nursultan Nazarbayev, first President of Kazakhstan
+                </div>
+                <p>
+                    Kazakhstan’s first president, Nursultan Nazarbayev, is featured here on a bas-relief panel, a group
+                    of which
+                    partially ring Almaty’s monument to Kazakhstan’s independence. The muddied and damaged surface also
+                    appears
+                    to show frozen human saliva just above the former president’s left shoulder. Nazarbayev held
+                    Kazakhstan’s
+                    top administrative post from 1989, when he was appointed by Soviet premier Mikhail Gorbachev, until
+                    2019
+                    when he voluntarily stepped down and selected Kossym-Jomart Tokayev to succeed him. At the time of
+                    writing,
+                    Nazarbayev still holds the honorary lifetime title of El basy (Kazakh language for Leader of the
+                    Nation),
+                    though he has been replaced, (by Tokayev) as Chair of the powerful Security Council, and numerous
+                    Nazarbayev
+                    family members and loyalists have been removed from their administrative posts.
+                <p>
+            </section>
+
+            <section id="5" class="scene photo-scene" data-scene-id="place5" title="5">
+                <div class="figure contain" style="background-image:url(img/fig5.png);"></div>
+                <div class="caption">
+                    Figure 5: Bullet hole in window
+                </div>
+                <p>
+                    Visual evidence of gunfire is pervasive across the entire Independence Square area. While initial
+                    marching and protests were peaceful in Almaty, by the evening of the 4th violence erupted here.
+                    Clashes
+                    with police, recorded by television cameras, and flash grenades and bullets made the scene sound
+                    like a
+                    war zone.
+                </p>
+            </section>
+
+            <section id="6" class="scene photo-scene" data-scene-id="place6" title="6">
+                <div class="figure contain" style="background-image:url(img/fig6.jpg);"></div>
+
+                <div class="caption">
+                    Figure 6: Sign of the avenue named after Nursultan Nazarbayev
+                </div>
+                <p>
+                    A damaged Nursultan Nazarbayev avenue sign features the street name in Kazakh language followed by
+                    “avenue” in (from top) Kazakh, Russian, and English languages. The author explored many individual
+                    streets within this area and found no damage whatsoever to other streets’ signs. While this
+                    particular
+                    sign remains legible, along this street closer to the Independence Square epicenter, many of these
+                    signs
+                    were completely destroyed.
+                </p>
+            </section>
+
+
+            <section id="7" class="scene photo-scene" data-scene-id="place7" title="7">
+                <div class="figure contain" style="background-image:url(img/fig7.jpg);"></div>
+
+
+                <div class="caption">
+                    Figure 7: Bullet holes
+                </div>
+                <p>
+                    In addition to deaths, hospitalizations, and arrests, significant property damage also occurred
+                    throughout Almaty. Early estimates placed the total damage associated with these January events at
+                    between $2 and $3 billion (Karibayeva, 2022).
+                </p>
+            </section>
+
+            <section id="8" class="scene photo-scene" data-scene-id="place8" title="8">
+                <div class="figure contain" style="background-image:url(img/fig8.jpg);"></div>
+
+                <div class="caption">
+                    Figure 8: Fire damage, New Square
+                </div>
+
+                <p>
+                    On the western edge of Independence Square, fire damage leaves fingerprint-like scars on this
+                    building’s
+                    white façade. Across the top a message in the Kazakh language trumpets Kazakhstan’s 30 years of
+                    independence, a holiday celebrated on December 16. A sister building to the East features the same
+                    message and design in the Russian language.
+                </p>
+            </section>
+
+            <section id="9" class="scene photo-scene" data-scene-id="place9" title="9">
+                <div class="figure contain" style="background-image:url(img/fig9.png);"></div>
+
+                <div class="caption">
+                    Figure 9: Burned electrical box
+                </div>
+
+                <p>
+                    This photo, taken January 11, shows a charred electrical junction box on the corner of Nursultan
+                    Nazarbayev and Abai Avenues. On one walk past this site, it was being guarded by two SCTO troops.
+                    While
+                    the internet was shut down by the government during the height of the events, there is a sense of
+                    relief
+                    that power was never interrupted.
+
+                </p>
+            </section>
+
+            <section id="10" class="scene photo-scene" data-scene-id="place10" title="10">
+                <div class="figure contain" style="background-image:url(img/fig10.jpg);"></div>
+
+                <div class="caption">
+                    Figure 10: Pedestrian in crosswalk and soldier
+                </div>
+
+                <p>
+                    The appearance of CSTO troops in camouflage and carrying automatic weapons on January 11 was,
+                    perhaps
+                    counter-intuitively, a welcome sight. President Tokayev’s quick request for military support from
+                    the
+                    Collective Security Treaty Organization (CSTO) to suppress the unrest was granted. Indeed this
+                    became
+                    the first ever deployment of CSTO troops (most of those sent here were Russian soldiers) within a
+                    member
+                    state. Formed in 1992, this regional security grouping currently includes Russia, Kazakhstan,
+                    Kyrgyzstan, Tajikistan, Armenia, and Belarus. While official chairmanship rotates among member
+                    states,
+                    the CSTO is a Russia-dominated security grouping (see Cooley, 2022). One of the most puzzling
+                    aspects of
+                    these highly uncertain days was the odd lack of police presence throughout much of Almaty in the
+                    days
+                    directly following the peak of violence. Criminals and looters took advantage of the police absence
+                    across the city, adding to property damage and overall feelings of insecurity among law-abiding
+                    residents. Halima, a long-time Almaty resident, summed up her own personal insecurity, saying, “Many
+                    of
+                    us here in my apartment building are elderly and live alone. I was very afraid of damage to our
+                    apartments, especially as there were no police around at all.” Another citizen, Gulya, described a
+                    store
+                    being vandalized and looted in the early morning darkness. “I was looking down on the storefront and
+                    I
+                    noticed men walking back and forth. One broke the front window. Another entered the store, later
+                    emerging with boxes. This repeated for more than an hour, the entire time no police arrived
+                    whatsoever.”
+                </p>
+            </section>
+
+            <section id="11" class="scene photo-scene" data-scene-id="place12" title="11">
+                <div class="figure contain" style="background-image:url(img/fig11.jpg);"></div>
+
+                <div class="caption">
+                    Figure 11: Lodged bullet
+                </div>
+
+                <p>
+                    A lead-filled bullet crater offers yet another visual reminder of violence and the loss of human
+                    life.
+                    At the time of writing, much uncertainty remains with respect to who is responsible for the
+                    violence,
+                    and to what end. Were people angrily and violently protesting against the continued power and wealth
+                    held by Nazarbayev and his family? Was this a coup d'état against the current Tokayev regime? Was
+                    this
+                    an instance of domestic or international terrorism? President Tokayev’s public statements seem to
+                    indicate the latter. For Almaty residents, the following message aired near the start of curfew on
+                    television and was broadcast in both Russian and Kazakh languages on outdoor loudspeakers, echoing
+                    through the night. “Dear Almaty residents! In Almaty an anti-terrorist operation is going on to
+                    destroy
+                    gangs. The main purpose is to stop terrorists and ensure security. In case anti-terrorist actions
+                    take
+                    place near your home, we recommend to not get close to windows, and do not go outside. Hide in a
+                    safe
+                    place and keep watch over children and elderly.”
+
+                </p>
+            </section>
+
+            <section id="12" class="scene photo-scene" data-scene-id="place12" title="12">
+                <div class="figure contain" style="background-image:url(img/fig12.png);"></div>
+
+                <div class="caption">
+                    Figure 12: Independence square bullet holes
+                </div>
+
+                <p>
+                    A wider-angle view from the same location as the previous image looks east along Satpaev Street. By
+                    January 14, the date this image was made, a semblance of normalcy had returned, including the
+                    operation
+                    of public transport (buses in this case) and a slight increase in automobile traffic.
+                </p>
+            </section>
+
+            <section id="13" class="scene photo-scene" data-scene-id="place13" title="13">
+                <div class="figure contain" style="background-image:url(img/fig13.png);"></div>
+
+                <div class="caption">
+                    Figure 13: Charred communications building
+                </div>
+
+                <p>
+                    Fire has destroyed much of this telecommunications building near Independence Square on the north
+                    side
+                    of Satpaev Ave. During the peak of violence and immediate aftermath, the city and its residents were
+                    cut
+                    off completely from communications with the outside world. This image and the events it symbolizes
+                    offer
+                    a reminder of our existential fragility, where our dependence on all things digital (communications,
+                    banking, purchases of food) and the ability to survive can be ended in an instant. The blue sky,
+                    matching that of the Kazakhstani state flag, may represent hope for a peaceful and prosperous future
+                    for
+                    the Kazakhstani state and its residents.
+                </p>
+            </section>
+
+            <section id="14" class="scene photo-scene" data-scene-id="place14" title="14">
+                <div class="figure contain" style="background-image:url(img/fig14.jpg);"></div>
+
+                <div class="caption">
+                    Figure 14: Bank Closed
+                </div>
+
+                <p>
+                    “Bank Closed” in Russian language on printer paper greets those hoping to gain access to money or
+                    any
+                    number of other financial transactions. To the left, another visual cue references an ongoing, two
+                    year
+                    crisis, that of the global pandemic. The accessibility system for those with disabilities is in its
+                    infancy. Pushing the button below the yellow sign may (or indeed may not) result in a security guard
+                    appearing to help. Shuttering the banking sector, including internet banking, must have had a
+                    devastating and as yet unknown impact on the city’s economy.
+                </p>
+            </section>
+
+            <section id="15" class="scene photo-scene" data-scene-id="place15" title="15">
+                <div class="figure contain" style="background-image:url(img/fig15.png);"></div>
+
+                <div class="caption">
+                    Figure 15: Bankomat (ATM) sealed off
+                </div>
+
+                <p>
+                    On the corner of Kabanbay Batyr and Nursultan Nazarbayev streets, a bankomat (ATM) remains protected
+                    while simultaneously preventing public access. Just prior to this image being made, two elderly
+                    individuals approached the scene from different directions. Each was clearly distressed to see the
+                    machine not working, and a fairly animated discussion followed on the possible location of a
+                    properly
+                    functioning ATM. Once again, removing one’s access to one’s finances without any indication of when
+                    (or
+                    even if) access would be restored engenders a significant sense of anxiety and fear.
+                </p>
+            </section>
+
+            <section id="16" class="scene photo-scene" data-scene-id="place16" title="16">
+                <div class="figure contain" style="background-image:url(img/fig16.png);"></div>
+
+                <div class="caption">
+                    Figure 16: Beer replaced by canned peas
+                </div>
+
+                <p>
+                    For the author, luckily, the nearest grocery store was not ransacked by looters. Under a state of
+                    emergency a blanket “no alcohol” policy outlawed such sales in all stores, markets, and restaurants.
+                    Here, an aisle normally stocked with beer is now stocked with canned peas. Another entire aisle
+                    dedicated to vodkas was stocked with pasta, yet another normally housing wine and spirits had canned
+                    beans. During the state of emergency, a city-wide curfew was also in effect between the hours of 11
+                    pm
+                    and 7 am.
+                </p>
+            </section>
+
+            <section id="17" class="scene photo-scene" data-scene-id="place17" title="17">
+                <div class="figure contain" style="background-image:url(img/fig17.jpg);"></div>
+
+                <div class="caption">
+                    Figure 17: Nur-Otan political party
+                </div>
+
+                <p>
+                    Nur-Otan (translates from Kazakh language to “Radiant Fatherland”), essentially the political party
+                    in
+                    Kazakhstan, boasts both Nazarbayev and Tokayev as members. The party’s logo, located at the top of
+                    one
+                    of its buildings in Almaty features the radiant sun motif from the Kazakhstani state flag, as well
+                    as a
+                    leaping snow leopard. While international television news coverage featured heavy destruction at the
+                    party’s headquarters, this building suffered no evident damage.
+                    (Author’s note: On March 1, 2022 this political party, still headed by President Tokayev, changed
+                    its
+                    name to ‘Amanat,’ a move seen by many as the current president distancing himself and his presidency
+                    from former President Nazarbayev (Putz, 2022)).
+                </p>
+            </section>
+
+            <section id="18" class="scene photo-scene" data-scene-id="place18" title="18">
+                <div class="figure contain" style="background-image:url(img/fig18.png);"></div>
+
+                <div class="caption">
+                    Figure 18: Intact Nursultan Nazarbayev Avenue sign
+                </div>
+
+                <p>
+                    Moving north along Nursultan Nazarbayev Avenue revealed lessening damage to the street signs with
+                    distance from the Independence Square epicenter. While certain elements of the rioting mob seemed to
+                    be
+                    protesting the previous Nazarbayev regime and/or family and continued power and perceived corruption
+                    (witness figures 4 and 6 above), it is expected that the first President’s historical significance
+                    in
+                    Kazakhstan will remain. Narratives and myths may evolve over time, but the fact remains that
+                    Nazarbayev
+                    did lead Kazakhstan through a tumultuous transition from the Soviet past. This was done in tandem
+                    with
+                    economic growth, economic development, and political stability. As most states celebrate their
+                    “founding
+                    fathers’” it seems likely that Nazarbayev will remain a prominently important figure in the
+                    country’s
+                    history books.
+
+                </p>
+            </section>
+
+            <section id="19" class="scene photo-scene" data-scene-id="place19" title="19">
+                <div class="figure contain" style="background-image:url(img/fig19.png);"></div>
+
+                <div class="caption">
+                    Figure 19: Looking north from behind the Akimat building
+                </div>
+
+                <p>
+                    By January 14, the date of this image, cleanup of the Akimat building had begun. Here the façade of
+                    the
+                    building is being covered with army-green tarps, and charred damaged wood, glass, and other
+                    materials
+                    are being cleared. Just to the left of this scene are rows of army barrack-style tents that remind
+                    the
+                    viewer of the arduous task ahead of cleanup, removal, and repair. This remains a recurring theme
+                    throughout much of Almaty.
+
+                </p>
+            </section>
+
+            <section id="20" class="scene photo-scene" data-scene-id="place20" title="20">
+                <div class="figure contain" style="background-image:url(img/fig20.png);"></div>
+
+                <div class="caption">
+                    Figure 20: New Square and monument to Kazakhstan’s independence
+                </div>
+
+                <p>
+                    Two people are seen at the base of Almaty’s monument to Kazakhstan independence. At the top, a
+                    Scythian
+                    warrior known as the “Golden Man” sits atop a winged snow leopard. At the bottom, a replica
+                    constitution
+                    is open, book-like, and includes the handprint of Nursultan Nazarbayev. While bullets struck the
+                    monument in at least two visible locations, it emerged from the chaos, smoke, and bloodshed intact
+                    and
+                    relatively unscathed.
+                </p>
+            </section>
+
+            <section id="21" class="scene photo-scene" data-scene-id="place21" title="21">
+                <div class="figure contain" style="background-image:url(img/fig21.png);"></div>
+
+                <div class="caption">
+                    Figure 21: Flowers, replica of the Constitution, and hand of Nazarbayev
+                </div>
+
+                <p>
+                    At the base of the Independence monument, this image offers a closer view of the book-like rendition
+                    of
+                    the Kazakhstan constitution. To the left, “Choose and be in Bliss” is etched in Kazakh, Russian, and
+                    English languages. On the right is the well-worn right hand imprint of the First President of
+                    Kazakhstan. Fresh flowers are often placed here.
+                </p>
+            </section>
+
+            <section id="22" class="scene photo-scene" data-scene-id="place22" title="22">
+                <div class="figure contain" style="background-image:url(img/fig22.jpg);"></div>
+
+                <div class="caption">
+                    Figure 22: Return to normalcy?
+                </div>
+
+                <p>
+                    Here can be seen young women performing a common ritual, placing one’s right hand in Nazarbayev’s
+                    for
+                    good luck. Above the scene, a Russian language sign trumpets Kazakhstan’s 30 years of independence.
+
+                </p>
+            </section>
+
+            <section id="23" class="scene photo-scene" data-scene-id="place23" title="23">
+                <div class="figure contain" style="background-image:url(img/fig23.jpg);"></div>
+
+                <div class="caption">
+                    Figure 23: Friendship
+                </div>
+
+                <p>
+                    Dostyk (In Kazakh language, translates to “Friendship”) Avenue with Avenue in Kazakh, Russian and
+                    English languages. While still in a state of emergency, most residents welcome the gradual return of
+                    urban functioning. Yet ‘normalcy’ varies greatly across Almaty residents. Though it appears the
+                    reinstated liquefied petroleum gas subsidies will remain in place for the short term, structural
+                    issues
+                    remain that will continue to erode people’s economic security. Poverty, largely inadequate pensions,
+                    income and wealth inequality, inflation, and devaluation of the local currency (tenge) conspire to
+                    produce palpable financial uncertainty.
+                </p>
+            </section>
+
+
+            <section id="24" class="scene photo-scene" data-scene-id="place25"
+                title="Reflection of independence monument in cracked glass">
+                <div class="figure cover" style="background-image:url(img/fig24.jpg);"></div>
+                <p>
+                    The Independence Monument, itself symbolizing the birth, strength, and continued existence of
+                    Kazakhstan, is reflected
+                    in fractured glass. With the violence of ‘tragic January’ fresh in the recent memories of residents
+                    here, relief at the
+                    restoration of order is tempered by uncertainty and unease. Are these surficial fissures in the
+                    political and social fabric,
+                    or are they deeper ruptures threatening the State’s cohesion? However events play out in the future,
+                    Almaty residents
+                    emain hopeful and resilient.
+                </p>
+            </section>
+
+            <section id="25" class="scene" data-scene-id="place25" title="Conclusion">
+                <h3>Conclusion </h3>
+                <p>
+                    This photo essay offers primary source materials (images, personal observations and experience of
+                    the
+                    author, and interview responses
+                    of residents) to document the aftermath of this violent and landmark event in the history of
+                    independent
+                    Kazakhstan.
+                    The narrative here emanates from the perspective of local residents and forgotten ‘ordinary’
+                    citizens so
+                    often overlooked
+                    in academic discussions focused on political elites and regional geopolitics.
+                    Whatever power struggle dynamics continue to play out between the Nazarbayev and Tokayev factions,
+                    the
+                    people here hold
+                    out cautious hope that they be less public and less dramatic. If the official state narrative of
+                    terrorist
+                    action holds
+                    any validity, the prevailing hope is that the threat has been eliminated. In either case, Almaty has
+                    cautiously embraced
+                    a sense of peace, calm, and a seeming return to normalcy.
+
+
+                    First names of those willing to share their experiences have been changed. One interlocutor sent a
+                    link
+                    to
+                    Smayil (2022) referencing prison terms for spreading false information to explain her reluctance to
+                    speak on
+                    the matter.
+
+                </p>
+
+                <ul class="references">
+                    <li>
+                        Al Jazeera English. 2022. What just happened in Kazakhstan? Start Here.
+                        https://www.youtube.com/watch?v=NEmvqSU7fk4&t=341s.
+                    </li>
+
+                    <li>
+                        Cooley, A. 2022. Kazakhstan called for assistance. Why did Russia dispatch troops so quickly?
+                        Washington
+                        Post (January 9)
+                        https://www.washingtonpost.com/politics/2022/01/09/kazakhstan-called-assistance-why-did-russia-dispatch-troops-so-quickly/
+                    </li>
+
+                    <li>
+                        Embassy of Kazakhstan. 2022. Kazakhstan’s Law Enforcement Agencies Continue to Provide Updates
+                        on
+                        Investigation into Tragic January Events.
+                        https://www.gov.kz/memleket/entities/mfa-washington/press/news/details/316931?lang=en
+                    </li>
+
+                    <li>
+                        Karibayeva, A. 2022. Kazakhstan’s Unrest Leaves Behind a Traumatized Society. Foreign Policy
+                        January
+                        19.
+                        https://foreignpolicy.com/2022/01/19/kazakhstan-unrest-trauma-aftermath/.
+                    </li>
+
+                    <li>
+                        Putz, C. 2022. Nur Otan No More? Kazakhstan’s ruling party rebrands as ‘Amanat.’ The Diplomat
+                        (March
+                        2)
+                        https://thediplomat.com/2022/03/nur-otan-no-more-kazakhstans-ruling-party-rebrands-as-amanat/
+                    </li>
+
+                    <li>
+                        Smayil, M. 2022. Turgumbaev: The threat of up to 7 years in prison for spreading false
+                        information
+                        in an
+                        emergency (in Russian language). Tengrinews January 9:
+                        https://tengrinews.kz/kazakhstan_news/turgumbaev-7-let-lisheniya-svobodyi-grozit-rasprostranenie-458564/.
+                    </li>
+                </ul>
+            </section>
+
+            <div class="row footer-row"></div>
+        </div>
+    </div>
+    <div id="progress">
+        <div id="bar"></div>
+    </div>
+    <div id="bar-top"></div>
+    <div id="bar-bottom"></div>
+    <!-- inject:templates:html -->
+    <!-- endinject -->
+    <script src="../../../js/combined.js"></script>
+    <script>
+        var pointStyle = {
+            opacity: 0.5,
+            radius: 7,
+            weight: 21,
+            fillColor: '#00ABC2',
+            color: '#00ABC2'
+        };
+        var yellowPointStyle = {
+            ...pointStyle,
+            fillColor: 'rgb(255, 236, 45)',
+            color: 'rgb(255, 236, 45)'
+        };
+
+        var figures = [
+            ["Burned Mayor's Office", 76.945690, 43.236592],
+            ['Black Spraypaint', 76.945297, 43.238005],
+            ['Burned Automobile', 76.947815, 43.239194],
+            ['President of Kazakhstan', 76.945657, 43.238608],
+            ['Bullet Hole in Window', 76.946623, 43.238963],
+            ['Nursultan Nazarbayev Avenue', 76.948265, 43.244535],
+            ['Bullet Holes', 76.947402, 43.238930],
+            ['Fire Damage in New Square', 76.944440, 43.238925],
+            ['Burned Electrical Box', 76.948215, 43.242229],
+            ['Pedestrian in Crosswalk and Soldier', 76.947971, 43.246479],
+            ['Lodged Bullet', 76.945295, 43.238463],
+            ['Independence Square Bullet Holes', 76.945299, 43.238461],
+            ['Charred Communications Building', 76.947768, 43.238943],
+            ['Bank Closed', 76.956879, 43.246630],
+            ['Bankomat', 76.947657, 43.249612],
+            ['Beer Replaced by Canned Peas', 76.956428, 43.250041],
+            ['Nur-Oltan Political Party', 76.941116, 43.254883],
+            ['Nursultan Nazarbayev Avenue 2', 76.946910, 43.251315],
+            ['Akimat Building', 76.945014, 43.235676],
+            ['New Square & Monument', 76.945415, 43.238546],
+            ['Replica of Constitution/Hand of Nazarbayev', 76.945413, 43.238573],
+            ['Return to Normalcy', 76.945415, 43.238532],
+            ['Friendship', 76.957615, 43.239643],
+            ['Cracked Glass', 76.946160, 43.238029],
+        ];
+
+        var features = figures.map(function (feature, i) {
+            return {
+                "id": `figure${i + 1}`,
+                "type": "geojson",
+                "data": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [feature[1], feature[2]]
+                    },
+                    "properties": {
+                        "name": feature[0]
+                    }
+                },
+                "style": pointStyle
+            };
+        });
+
+        var overviewBasemap = {
+            type: 'tile',
+            url: 'https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png'
+        }
+
+        var basemap = [{
+            "type": "esri-basemap",
+            "url": "Imagery",
+            "options": {
+                "detectRetina": true,
+                "imagerySet": "AerialWithLabels"
+            }
+        }];
+
+        var almatyGeoJson = {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    76.9457275,
+                    43.2363924
+                ]
+            },
+            "properties": {
+                "place_id": 343458018,
+                "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+                "osm_type": "relation",
+                "osm_id": 2465058,
+                "boundingbox": [
+                    "43.0328438",
+                    "43.4037657",
+                    "76.7382775",
+                    "77.1667539"
+                ],
+                "display_name": "Almaty, Kazakhstan",
+                "class": "boundary",
+                "type": "administrative",
+                "importance": 0.7436156316050981,
+                "icon": "https://nominatim.openstreetmap.org/ui/mapicons/poi_boundary_administrative.p.20.png",
+                "coordinates": [
+                    76.9457275,
+                    43.2363924
+                ],
+                "name": "Almaty, Kazakhstan"
+            }
+        };
+        var zhanaozenGeoJson = {
+            "type": "Feature", 
+            "geometry": {
+                "type": "Point",
+                "coordinates": [52.8556219, 43.3381034]
+            },
+            "properties": { "place_id": 298800937, "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright", "osm_type": "relation", "osm_id": 5515236, "boundingbox": ["43.2117632", "43.4850676", "52.6718595", "53.1501286"], "display_name": "Zhanaozen, Mangystau Region, 130201, Kazakhstan", "class": "boundary", "type": "administrative", "importance": 0.6230503733473176, "icon": "https://nominatim.openstreetmap.org/ui/mapicons/poi_boundary_administrative.p.20.png", "coordinates": [52.8556219, 43.3381034], "name": "Zhanaozen, Mangystau Region, 130201, Kazakhstan" } };
+        var almaty = {
+            id: 'almaty',
+            type: 'geojson',
+            data: almatyGeoJson,
+            style: {
+                ...yellowPointStyle,
+                text: {
+                    text: 'Almaty',
+                    style: {
+                        "font-size": '20px',
+                        "font-weight": 'bold',
+                        fill: pointStyle.fillColor
+                    }
+                }
+            }
+        };
+        var zhanaozen = {
+            id: 'zhanaozen',
+            type: 'geojson',
+            data: zhanaozenGeoJson,
+            style: {
+                ...yellowPointStyle,
+                text: {
+                    text: 'Zhanaozen',
+                    style: {
+                        "font-size": '20px',
+                        "font-weight": 'bold',
+                        fill: pointStyle.fillColor
+                    }
+                }
+            }
+        };
+        var scenes = {
+            "features": [almaty, zhanaozen, ...features],
+            "scenes": [{
+                "id": `place0`,
+                "baseLayer": overviewBasemap,
+                "zoom": 4,
+                "layers": [{
+                    "idRef": 'almaty'
+                }, {
+                    "idRef": 'zhanaozen'
+                }]
+            }, ...features.map((feature, index) => {
+                return {
+                    "id": `place${index + 1}`,
+                    "baseLayer": basemap,
+                    "zoom": 17,
+                    "layers": [{
+                        "idRef": `figure${index + 1}`
+                    }]
+                }
+            })]
+        };
+    </script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-79613259-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <script>
+        $(document).ready(function () {
+
+            $('#nav li.previous a').on('click', function (e) {
+                e.preventDefault();
+                var $prev = $('#nav').find('.sections li.active').prev();
+
+                if (!$prev.hasClass('previous')) {
+                    $prev.find('a').click();
+                }
+            });
+
+            $('#nav li.next a').on('click', function (e) {
+                e.preventDefault();
+                var $next = $('#nav').find('.sections li.active').next();
+
+                if (!$next.hasClass('next')) {
+                    $next.find('a').click();
+                }
+            });
+
+            document.onkeydown = function (e) {
+                if (e.keyCode == '38') {
+                    // up arrow
+                    $('#nav li.previous a').click();
+                } else if (e.keyCode == '40') {
+                    // down arrow
+                    $('#nav li.next a').click();
+                }
+            };
+
+            var startPoint = [43.236592, 76.945690];
+            var overviewMap = new Focus.Views.OverviewMapView({
+                model: new Backbone.Model({
+                    initialScene: new Focus.Models.SceneModel({
+                        baseLayer: overviewBasemap,
+                        center: startPoint,
+                        zoom: 1,
+                        showAttribution: false
+                    })
+                }),
+                showCenterPoint: true
+            });
+            var sceneManager = new Focus.Views.SceneManagerView({
+                el: $('body'),
+                initialScene: {
+                    baseLayer: overviewBasemap,
+                    center: startPoint,
+                    zoom: 3,
+                    zoomDelta: 3,
+                    markerZoomAnimation: false
+                },
+                navigatorClass: Focus.Views.ScrollingSceneNavigator,
+                mapEngineClass: Focus.Views.LeafletMapEngine
+            });
+
+            var shareView = new Focus.Views.ShareView();
+            shareView.render();
+        });
+    </script>
+</body>
+
+</html>
