@@ -1,6 +1,21 @@
 var Focus = Focus || {};
 Focus.Volumes = [
     {
+        number: 66,
+        publications: [
+            {
+                type: "Photo Essay",
+                title: '"Tragic January": Under a State of Emergency in Almaty, Kazakstan',
+                author: "Kristopher White",
+                description: "",
+                date: "04/05/23",
+                thumbnail: "publications/photoessays/almaty/img/fig24.jpg",
+                url: "publications/photoessays/almaty/index.html",
+                location: [],
+            }
+        ]
+    },
+    {
         number: 65,
         publications: [
             {
