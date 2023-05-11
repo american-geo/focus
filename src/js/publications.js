@@ -12,6 +12,16 @@ Focus.Volumes = [
                 thumbnail: "publications/photoessays/almaty/img/fig24.jpg",
                 url: "publications/photoessays/almaty/index.html",
                 location: [],
+            },
+            {
+                type: "Photo Essay",
+                title: 'Calm And Chaos: Everydayness post-floods in Majuli',
+                author: "Prahelika Deka",
+                description: "",
+                date: "05/11/23",
+                thumbnail: "publications/photoessays/majuli_floods/img/figure3.jpg",
+                url: "publications/photoessays/majuli_floods/index.html",
+                location: [],
             }
         ]
     },
