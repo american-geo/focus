@@ -22,6 +22,16 @@ Focus.Volumes = [
                 thumbnail: "publications/photoessays/majuli_floods/img/figure3.jpg",
                 url: "publications/photoessays/majuli_floods/index.html",
                 location: [],
+            },
+            {
+                type: "Photo Essay",
+                title: 'Science by Canoe: A Treeline Transect in Northern Canada',
+                author: "Ryan K. Danby, Gregory King, Mitchell T. Bonney, Stuart Thibert",
+                description: "",
+                date: "07/07/23",
+                thumbnail: "publications/photoessays/canoe/img/figure20.jpg",
+                url: "publications/photoessays/canoe/index.html",
+                location: [],
             }
         ]
     },
