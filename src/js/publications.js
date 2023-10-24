@@ -4,13 +4,23 @@ Focus.Volumes = [
         number: 66,
         publications: [
             {
-                type: "Photo Essay",
-                title: '"Tragic January": Under a State of Emergency in Almaty, Kazakstan',
-                author: "Kristopher White",
+                type: "Feature Article",
+                title: 'Sentinels of the Sahel: Identifying Values of Baobab Forests and Threats to the Species in Senegal',
+                author: "Karen S. Barton",
                 description: "",
-                date: "04/05/23",
-                thumbnail: "publications/photoessays/almaty/img/fig24.jpg",
-                url: "publications/photoessays/almaty/index.html",
+                date: "09/19/23",
+                thumbnail: "publications/articles/baobab/images/figure6.jpg",
+                url: "publications/articles/baobab/index.html",
+                location: [],
+            },
+            {
+                type: "Photo Essay",
+                title: 'Science by Canoe: A Treeline Transect in Northern Canada',
+                author: "Ryan K. Danby, Gregory King, Mitchell T. Bonney, Stuart Thibert",
+                description: "",
+                date: "07/07/23",
+                thumbnail: "publications/photoessays/canoe/img/figure20.jpg",
+                url: "publications/photoessays/canoe/index.html",
                 location: [],
             },
             {
@@ -25,14 +35,14 @@ Focus.Volumes = [
             },
             {
                 type: "Photo Essay",
-                title: 'Science by Canoe: A Treeline Transect in Northern Canada',
-                author: "Ryan K. Danby, Gregory King, Mitchell T. Bonney, Stuart Thibert",
+                title: '"Tragic January": Under a State of Emergency in Almaty, Kazakstan',
+                author: "Kristopher White",
                 description: "",
-                date: "07/07/23",
-                thumbnail: "publications/photoessays/canoe/img/figure20.jpg",
-                url: "publications/photoessays/canoe/index.html",
+                date: "04/05/23",
+                thumbnail: "publications/photoessays/almaty/img/fig24.jpg",
+                url: "publications/photoessays/almaty/index.html",
                 location: [],
-            }
+            }           
         ]
     },
     {

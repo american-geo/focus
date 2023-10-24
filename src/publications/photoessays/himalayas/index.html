@@ -1,0 +1,1529 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Pollinator Landscapes in the Himalayas</title>
+    <meta name="description" content="FOCUS on Geography: Pollinator Landscapes in the Himalayas">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="geography,pollinators,Himalayas,citizen science,farmers,orchards">
+    <meta name="author" content="Aman Luthra, Ginger Allington">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Place favicon.ico in the root directory -->
+    <link href="//fonts.googleapis.com/css?family=Lato:400" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Slabo+27px:400normal" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Poller+One" rel="stylesheet">
+    <link href="../../../css/combined.css" rel="stylesheet" type="text/css">
+    <script src="../../../js/vendor/modernizr-2.8.3.min.js"></script>
+    <style>
+        body {
+            font-family: 'Lato', sans serif;
+        }
+
+        .scene.photo-scene div.figure {
+            cursor: none;
+            pointer-events: none;
+        }
+
+        #text.photo-essay {
+            background: black;
+        }
+
+        #text h2,
+        #text h3 {
+            color: rgba(219, 156, 152);
+            font-family: 'Slabo 27px', sans serif;
+            text-transform: none;
+
+        }
+
+        div.author {
+            opacity: 1;
+        }
+
+        .photo-scene:first {
+            height: auto;
+        }
+
+        .photo-scene h2 {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0))
+        }
+
+        .photo-scene p {
+            *background: linear-gradient(0deg, rgba(255, 255, 255, .9) 90%, rgba(255, 255, 255, 0));
+            color: white;
+            text-shadow: none;
+        }
+
+        .photo-scene .author {
+            background: rgba(10, 95, 169, 0.95);
+        }
+
+        #text.photo-essay h2 {
+            color: rgb(219, 156, 152);
+            font-size: 60px;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0))
+        }
+
+        span.place-text {
+            *font-family: 'Aladin', cursive;
+            color: #fff;
+        }
+
+        #text a:hover,
+        a.location:hover,
+        div.tooltip a {
+            background: rgba(0, 47, 108, 0.1);
+            text-decoration: none;
+        }
+
+        path.line {
+            stroke: rgba(0, 47, 108, 1) !important;
+        }
+
+        path.marker-path {
+            stroke: rgba(0, 47, 108, 1) !important;
+            fill: rgba(0, 47, 108, 1) !important;
+        }
+
+        #text h2 {
+            *text-shadow: 1px 0 0 #222, -1px 0 0 #222, 2px 0 0 #fff, -2px 0 0 #fff;
+            font-size: 40px;
+        }
+
+        #nav,
+        #toggle-map {
+            background: rgba(68, 70, 78, 0.7);
+        }
+
+        #text {
+            *background: linear-gradient(90deg, rgba(254, 252, 238, 0.7), rgba(254, 252, 238, 1) 50%);
+            background: rgba(254, 252, 238, 1);
+        }
+
+        progress::-webkit-progress-bar {
+            background-color: transparent;
+        }
+
+        progress::-webkit-progress-value {
+            background-color: rgba(219, 156, 152);
+            -webkit-transition: width 0.5s ease-in-out;
+        }
+
+        progress::-moz-progress-bar {
+            background-color: rgba(219, 156, 152);
+            transition: width 0.5s ease-in-out;
+            -moz-transition: width 0.5s ease-in-out;
+        }
+
+        progress::-ms-fill {
+            background-color: rgba(219, 156, 152);
+            -ms-transition: width 0.5s ease-in-out;
+        }
+
+        svg text {
+            font-family: 'Lato', sans serif;
+            font-size: 16px;
+            fill: #fff;
+        }
+
+        ul.grid {
+            top: 100px;
+            position: relative;
+            z-index: 100;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-justify-content: center;
+            justify-content: center;
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 0 0 6em;
+            list-style: none;
+        }
+
+        li.grid-item {
+            display: block;
+            -webkit-flex: none;
+            flex: none;
+            width: 35%;
+            min-width: 180px;
+            padding: 10px;
+        }
+
+        .grid-item a {
+            border-bottom: none;
+        }
+
+        .grid-img {
+            display: block;
+            width: 100%;
+        }
+
+        .grid-link {
+            display: block;
+            padding: 10px 10px;
+            background: #fff;
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+            pointer-events: none;
+            cursor: none;
+        }
+
+        .figure {
+            z-index: 1000;
+        }
+
+        p {
+            z-index: 1001;
+        }
+
+        #acknowledgements {
+            border-color: rgba(0, 47, 108, 1);
+        }
+
+        .photo-scene .row.footer-row {
+            color: rgba(0, 47, 108, 1);
+        }
+
+        #text h2 {
+            font-family: 'Poller One', cursive;
+            text-transform: none;
+            font-size: 50px;
+        }
+
+        #text h3 {
+            font-family: 'Poller One', cursive;
+            text-transform: none;
+            color: rgba(219, 156, 152);
+        }
+
+        #nav,
+        #toggle-map {
+            background: rgba(68, 70, 78, 0.7);
+        }
+
+        span.place-text {
+            font-family: 'Poller One', cursive;
+            color: #fff;
+        }
+
+        #text a,
+        a.location,
+        div.tooltip a {
+            color: rgb(219, 156, 152);
+            border-bottom-color: rgb(219, 156, 152);
+        }
+
+        #text a:hover,
+        a.location:hover,
+        div.tooltip a {
+            background: rgba(174, 71, 65, 0.1);
+            text-decoration: none;
+        }
+
+        path.line {
+            stroke: #AE4741 !important;
+        }
+
+        path.marker-path {
+            stroke: #AE4741 !important;
+            fill: #AE4741 !important;
+        }
+
+        progress::-webkit-progress-bar {
+            background-color: transparent;
+        }
+
+        progress::-webkit-progress-value {
+            background-color: rgb(219, 156, 152);
+            -webkit-transition: width 0.5s ease-in-out;
+        }
+
+        progress::-moz-progress-bar {
+            background-color: rgb(219, 156, 152);
+            transition: width 0.5s ease-in-out;
+            -moz-transition: width 0.5s ease-in-out;
+        }
+
+        progress::-ms-fill {
+            background-color: rgb(219, 156, 152);
+            -ms-transition: width 0.5s ease-in-out;
+        }
+
+        svg text {
+            font-family: 'Poller One', cursive;
+            font-size: 16px;
+            fill: #fff;
+            text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        .tooltip.bottom .tooltip-arrow,
+        .tooltip.bottom-left .tooltip-arrow,
+        .tooltip.bottom-right .tooltip-arrow {
+            border-bottom-color: #AE4741;
+        }
+
+        .tooltip.left .tooltip-arrow {
+            border-left-color: #AE4741;
+        }
+
+        .tooltip-inner {
+            background: #AE4741;
+            color: #fff;
+        }
+
+        .tooltip-inner a.location,
+        #photo-caption a.location {
+            color: #fff;
+            border-bottom-color: #fff;
+        }
+
+        .dotstyle .sections li {
+            position: relative;
+            display: block;
+            float: left;
+            margin: 2px 17px;
+            width: 16px;
+            height: 12px;
+            cursor: pointer;
+        }
+
+        .dotstyle .sections li a {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 8px;
+            outline: 0;
+            border-radius: 0px;
+            background-color: #fff;
+            background-color: rgba(255, 255, 255, .3);
+            text-indent: -999em;
+            cursor: pointer;
+            position: absolute;
+            padding: 0;
+        }
+
+
+        @media (max-height: 768px) and (min-width: 900px) {
+            .dotstyle .sections li {
+                height: 10px !important;
+            }
+        }
+
+        @media (max-width: 1400px) {
+            #text.photo-essay h2 {
+                font-size: 40px;
+            }
+
+            #text .scene.photo-scene p {
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+
+        .row .footer-row {
+            display: block;
+        }
+
+        .figure-grid div.figure {
+            height: calc(33vh);
+            background-size: cover;
+        }
+
+        .photo-scene span.row.footer-row {
+            color: #AE4741;
+        }
+
+        #overview-map {
+            width: 150px;
+            height: 150px;
+        }
+
+        .figure.zoom-height {
+            background-size: auto 55%;
+        }
+    </style>
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+    <progress></progress>
+    <div id="nav" class="dotstyle dotstyle-scaleup">
+        <ul class="nav share">
+            <li>
+                <a data-toggle="tooltip" title="Share on Twitter"
+                    href="https://twitter.com/intent/tweet?status=[TITLE]+[URL]" class="twitter-share-button"><span
+                        class="fa fa-twitter"></span></a>
+            </li>
+            <li>
+                <a data-toggle="tooltip" title="Share on Facebook"
+                    href="http://www.facebook.com/sharer/sharer.php?u=[URL]&title=[TITLE]"><span
+                        class="share-button fa fa-facebook-official"></span></a>
+            </li>
+            <li>
+                <a data-toggle="tooltip" title="Share via E-mail"
+                    href="mailto:?subject=[TITLE]&body=[TITLE]: [URL]"><span
+                        class="share-button fa fa-envelope"></span></a>
+            </li>
+        </ul>
+        <ul class="nav previous">
+            <li class="previous">
+                <a href="#"><span class="fa fa-chevron-up"></span></a>
+            </li>
+        </ul>
+        <ul class="nav sections">
+        </ul>
+        <ul class="nav next">
+            <li class="next">
+                <a href="#"><span class="fa fa-chevron-down"></span></a>
+            </li>
+        </ul>
+    </div>
+    <!-- Add your site or application content here -->
+    <div id="background"></div>
+    <div id="map" class="photo-essay"></div>
+    <div id="overview-map" class="title-hidden transparent"></div>
+    <div id="foreground"></div>
+    <div id="photos">
+        <div id="photo-caption"></div>
+    </div>
+    <div id="shadow"></div>
+    <div id="toggle-map" class="focus-black"><span class="fa fa-map-o" style="color: #fff; margin: 8px;"></span></div>
+    <div id="main-nav" class="light">
+        <div id="menu-icon-wrapper2" class="menu-icon-wrapper" style="visibility: visible;">
+            <svg width="1000px" height="1000px">
+                <path id="pathD" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"
+                    style="stroke-dashoffset: 5803.15; stroke-dasharray: 2901.57, 2981.57, 240;"></path>
+                <path id="pathE" d="M 300 500 L 700 500"
+                    style="stroke-dashoffset: 800; stroke-dasharray: 400, 480, 240;"></path>
+                <path id="pathF" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"
+                    style="stroke-dashoffset: 6993.11; stroke-dasharray: 3496.56, 3576.56, 240;"></path>
+            </svg>
+
+            <div id="menu-icon-trigger2" class="menu-icon-trigger"></div>
+        </div>
+        <a class="main-link" href="../../../index.html"><img id="logo" src="../../../img/focus-logo.svg" /></a>
+        <ul class="nav share">
+            <li>
+                <a data-toggle="tooltip" title="Share on Twitter"
+                    href="https://twitter.com/intent/tweet?status=[TITLE]+[URL]" class="twitter-share-button"><span
+                        class="fa fa-twitter"></span></a>
+            </li>
+            <li>
+                <a data-toggle="tooltip" title="Share on Facebook"
+                    href="http://www.facebook.com/sharer/sharer.php?u=[URL]&title=[TITLE]"><span
+                        class="share-button fa fa-facebook-official"></span></a>
+            </li>
+            <li>
+                <a data-toggle="tooltip" title="Share via E-mail"
+                    href="mailto:?subject=[TITLE]&body=[TITLE]: [URL]"><span
+                        class="share-button fa fa-envelope"></span></a>
+            </li>
+        </ul>
+        <div id="menu"></div>
+    </div>
+    <div id="text" class="photo-essay">
+        <div class="content scenes">
+            <section id="introduction" class="scene photo-scene" data-scene-id="place1">
+                <div class="intro">
+                    <h2 class="title">Pollinator Landscapes in the Himalayas</h2>
+                    <div class="author"
+                        style="background: linear-gradient(90deg, rgb(190, 44, 56), rgba(180, 3, 33, 0.644)); color: rgb(255, 255, 255);">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <div class="row">
+                                        <div class="col-12 col-xs-12">
+                                            <span class="name">Aman Luthra</span>,&nbsp;<span
+                                                class="organization">Fulbright-Nehru Senior Scholar (2022-23), Assistant
+                                                Professor, Department of Geography, George Washington University</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 col-xs-12">
+                                            <span class="name">Ginger Allington</span>,&nbsp;<span
+                                                class="organization">Assistant Professor, Department of Natural
+                                                Resources and the Environment, Cornell University</span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="citation"><span class="citation-label">DOI:</span>
+                                            10.21690/foge/2023.66.4p</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="figure " style="background-image:url(img/figure1.jpg);"></div>
+                <p>
+                    Populations of insect pollinators are declining significantly around the world (Dirzo et al 2014;
+                    Powney 2019). A range of factors including climate change, pesticide use, and land use/cover change
+                    impact the diversity and abundance of pollinators and thus the availability of services that they
+                    provide to humans (Wagner 2020). The effects of a ‘pollination crisis’ are particularly dire for
+                    farming communities whose livelihoods depend on the cultivation of pollinator-dependent crops such
+                    as apples (Pardo and Borges 2020; Dicks et al. 2021). In this project we are investigating the
+                    nature of this urgent and complex issue in the Mukteshwar region of the Uttarakhand Himalayas in
+                    northern India, where farming communities have long depended on apples and other
+                    pollinator-dependent crops for their livelihoods. Apple production in this region has declined over
+                    the past few decades, and several studies have suggested that pollinator scarcity and climate change
+                    may be to blame (Partap and Partap 2002; Basannagari and Kala 2013).
+                    </br>
+                    </br>
+                    However, there is a lack of
+                    empirical data on the current status of pollinator communities in the region. To interrogate this
+                    issue, we assembled a multi-disciplinary team of researchers from India and the United States:
+                    Ginger Allington (landscape ecology), Kiran Cunningham (applied anthropology), Ann Fraser
+                    (entomology), Aman Luthra (economic geography), Shweta Rana (environmental science), Preeti Virkar
+                    (entomology), and a diverse team of researchers with a range of interests and expertise from the
+                    Center for Ecology Development and Research (CEDAR), a non-governmental research organization based
+                    in Uttarakhand (Anvita Pandey, Narendra Raikwal, Anmol Ratna, Ankita Rawat, Vishal Singh and Renu
+                    Suyal). </p>
+            </section>
+            <section id="2" class="scene photo-scene" data-scene-id="place1">
+                <div class="figure contain" style="background-image:url(img/figure2.jpg); background-position:50% 0%;">
+                </div>
+                <p>
+                    We had three overarching goals for this fieldwork: (a) to engage farmers as citizen scientists in
+                    documenting pollinator diversity and abundance in their orchards; (b) to assess the impacts of
+                    landscape composition and configuration on pollinator diversity and abundance; and (c) to determine
+                    the extent of pollination limitation in apples in this region.
+                    </br>
+                    </br>
+                    The groundwork for this project began with two field visits by a subset of team members in July and
+                    December 2019. We interviewed twenty farmers and other stakeholders about production declines and
+                    tested out a method to involve farmers in documenting the diversity of pollinators on their farms.
+                    After a COVID-induced three-year hiatus, we restarted this project in November 2022. Four CEDAR team
+                    members conducted a rapid survey of thirty farms, from which we selected fifteen to participate in
+                    this study. We selected farms across a range of altitudes, slopes and farm sizes. Altitudes of the
+                    selected farms ranged from 1680 to 2360 meters above sea level. Farm sizes ranged from less than one
+                    acre to five acres and had between 50 to 1200 individual apple trees in their orchards. Farms
+                    typically grow multiple other subsistence and market crops within and adjacent to orchards.
+                </p>
+            </section>
+            <section id="3" class="scene photo-scene" data-scene-id="place1">
+                <div class="figure" style="background-image:url(img/figure3.jpg);"></div>
+                <p>
+                <h3>Pan trap sampling: farmers as citizen scientist</h3>
+                </p>
+                <p>
+                    <b>Pan trap sampling: farmers as citizen scientists</b>
+                    </br>
+                    </br>
+                    Citizen science, a rapidly growing research method, broadly refers to projects where members of the
+                    public collect, categorize, transcribe, or analyze data (Shirk and Bonney 2015). In addition to
+                    reducing costs of data collection, citizen science efforts can also help to develop a shared
+                    ecological understanding, co-generated by participants and researchers (Dunkley 2019). This might be
+                    particularly important for research involving pollinators because some evidence suggests that
+                    farmers around the world, including in Uttarakhand, undervalue the pollination services provided by
+                    wild pollinators, despite the potential huge benefits those organisms have for on-farm productivity
+                    (Partap and Partap 2002). We trained participating farmers to use the pan trap (or ‘bee bowl’)
+                    sample method to capture pollinators. This is a commonly used, simple method to document pollinator
+                    diversity and abundance at a site. Farmers in other parts of the world have been successfully
+                    trained as citizen scientists to conduct pan trap sampling (Garratt et al 2019).
+                </p>
+            </section>
+            <section id="4" class="scene photo-scene" data-scene-id="place1">
+                <div class="row">
+                    <div class="figure col-12 col-sm-3 col-xs-3"
+                        style="background-size: contain; background-image:url(img/figure4a.jpg)"></div>
+                    <div class="figure col-12 col-sm-3 col-xs-3"
+                        style="background-size: contain; background-image:url(img/figure4b.jpg)"></div>
+                    <div class="figure col-12 col-sm-3 col-xs-3"
+                        style="background-size: contain; background-image:url(img/figure4c.jpg)"></div>
+                    <div class="figure col-12 col-sm-3 col-xs-3"
+                        style="background-size: contain; background-image:url(img/figure4d.jpg)"></div>
+                </div>
+                <p>
+                    Figure 4: We developed a protocol for conducting pan trap sampling, trained each farmer on the
+                    methods, and provided them with all of the supplies that they needed for the sampling and storage of
+                    the bees. We developed a ‘farmer diary’ that describes and illustrates the protocol for conducting
+                    the experiment, and also contains data sheets for each sampling date where farmers document sampling
+                    information, weather conditions, and the dominant phenophase of apple trees in their orchard. Here
+                    are images of a few pages from the diary showing visual instructions for conducting pan trap
+                    sampling.
+                </p>
+            </section>
+            <section id="5" class="scene photo-scene" data-scene-id="place5">
+                <div class="figure " style="background-image:url(img/figure5.jpg);"></div>
+                <p>
+                    Figure 5: In early February 2023, four researchers from the CEDAR team visited the field sites to
+                    conduct the first pan trap sampling and train the farmers in the process. Once trained, farmers were
+                    asked to conduct pan trap sampling on their own at two-week intervals for a total of five instances
+                    between mid-February and mid-April. Each sampling exercise required around two hours of their time
+                    for which we compensated them five thousand Indian Rupees (approximately sixty US Dollars). In this
+                    image, Renu Suyal (l) and Ankita Rawat (r) are training one of the fifteen farmers on how to set out
+                    the pan traps in his orchard. [Photo credit: Akshat Pratap]
+                </p>
+            </section>
+            <section id="6" class="scene photo-scene" data-scene-id="place6">
+                <div class="figure " style="background-image:url(img/figure6.jpg);"></div>
+                <p>
+                    Figure 6: In late March, 2023, the entire research team visited the sites, collected pan trap
+                    samples from the farmers, and engaged in informal conversations with farmers about their experience
+                    participating in the process, and about pollinators on their farm more generally. Here you can see
+                    Renu Suyal, Narendra Raikwal and Aman Luthra talking to a farmer about the state of pollinators in
+                    the region while drinking cups of delicious rhododendron squash (Photo credit: Ankita Rawat).
+                </p>
+            </section>
+            <section id="7" class="scene photo-scene" data-scene-id="place7">
+                <div class="figure " style="background-image:url(img/figure7.jpg);"></div>
+                <p>
+                    Figure 7: Aman Luthra and Shweta Rana talk to a different farmer. Conversations with farmers were
+                    never limited to pollinators alone. Here, the farmer is telling us about his involvement in local
+                    politics in his younger years (Photo credit: Narendra Raikwal).
+                </p>
+            </section>
+            <section id="8" class="scene photo-scene" data-scene-id="place8">
+                <div class="figure " style="background-image:url(img/figure8.jpg);"></div>
+                <p>
+                    Figure 8: In general, we found farmers to be highly engaged in the process. Most followed the
+                    collection protocol carefully. In this image, Renu Suyal and Aman Luthra are checking the samples
+                    that a farmer had collected. Ankita Rawat meanwhile is checking to make sure that the information in
+                    the diary was complete and entered correctly (Photo credit: Ginger Allington).
+                </p>
+            </section>
+            <section id="9" class="scene photo-scene" data-scene-id="place9">
+                <div class="figure" style="background-image:url(img/figure9.jpg);"></div>
+                <p>
+                    Figure 9: During our March field visit, the weather often did not cooperate. It was rainy
+                    approximately fifty percent of the time, and we were not able to visit farms on those days. However,
+                    on the days we were forced to stay in our hotel, we used the time productively to get a jump start
+                    on processing and analyzing the samples of bees collected from each farm. The entomologists on our
+                    team (Ann Fraser and Preeti Virkar) trained the rest of the team to dry and pin the bees into
+                    organized boxes, which allowed them to begin identifying them. Here, Ann Fraser teaches the rest of
+                    the team where and how to pin the bees. (Photo credit: Ginger Allington)
+                </p>
+            </section>
+            <section id="10" class="scene photo-scene" data-scene-id="place9">
+                <div class="figure" style="background-image:url(img/figure10.jpg);"></div>
+                <p>
+                    Figure 10: The common spaces in the hotel were turned into a makeshift lab. In this image (Photo
+                    credit: Ann Fraser), Renu Suyal, Shweta Rana, and Kiran Cunningham pin the dried bees as Ginger
+                    Allington maps land use/cover (Photo credit: Ann Fraser).
+                </p>
+            </section>
+            <section id="11" class="scene photo-scene" data-scene-id="place9">
+                <div class="figure" style="background-image:url(img/figure11.jpg);"></div>
+                <p>
+                    Figure 11: Once bees had been pinned, the next step was to identify them to the genus level. Here,
+                    Preeti Virkar identifies bees (Photo credit: Russ Rhoads).
+                </p>
+            </section>
+            <section id="12" class="scene photo-scene" data-scene-id="place9">
+                <div class="figure" style="background-image:url(img/figure12.jpg);"></div>
+                <p>
+                    Figure 12: Ann Fraser identifies the bees, Kiran Cunningham labels them with the genus ID, and Aman
+                    Luthra enters the data into a spreadsheet (Photo credit: Shweta Rana).
+                </p>
+            </section>
+            <section id="13" class="scene photo-scene" data-scene-id="place9">
+                <div class="figure" style="background-image:url(img/figure13.jpg);"></div>
+                <p>
+                    Figure 13: The relative abundance of the different bee genera in the samples analyzed thus far. As a
+                    result of our collective effort, we were able to process almost all of the samples while we were
+                    still in the field. Thus far, a total of 1,396 individuals have been identified, representing
+                    thirteen bee genera. In addition to bees, the samples also contained syrphid flies, butterflies,
+                    moths and wasps.
+                </p>
+            </section>
+            <section id="14" class="scene photo-scene" data-scene-id="place9">
+                <div class="row">
+                    <div class="figure col-12 col-sm-6 col-xs-3"
+                        style="background-size: contain; background-image:url(img/figure14a.jpg)"></div>
+                    <div class="figure col-12 col-sm-6 col-xs-3"
+                        style="background-size: contain; background-image:url(img/figure14b.jpg)"></div>
+                </div>
+                <p>
+                    Figure 14: During a field visit at the end of April 2023, we shared preliminary results with the
+                    farmers, engaging them in discussion about what we are doing with the specimens they collected, what
+                    an analysis of the data will show, and how that analysis might be helpful to them. This exercise
+                    demonstrated that we are committed to collaborating with the farmers to understand the state of
+                    pollinators on their farms. The image on the left shows all the bees collected from a single farm
+                    and on the right is a sample of the report that we will share with the farmers that compares what we
+                    found on their farm to data from all farms combined (Photo credit: Kiran Cunningham).
+                    </br>
+                    </br>
+                    <span style="font-style:bold">Landscape ecology of pollinators</span>
+                    </br>
+                    </br>
+                    Pollinator communities are affected by landscape composition and configuration at different spatial
+                    scales (Betts et al 2019). Habitat loss and fragmentation, landscape heterogeneity and land use
+                    intensification affect pollinator communities in various ways (Senapathi et al 2017). In our study
+                    area, landholdings are typically small and the mountainous terrain consists of a mosaic of land
+                    cover that could, at least in theory, support a rich and diverse pollinator community. But land use
+                    and land cover in the area has been changing dramatically over the past few decades due to various
+                    politico-economic pressures (Basannagari and Kala 2017). Out-migration of younger people from the
+                    area to cities in search of better livelihood opportunities has led to farm abandonment and the sale
+                    of land to property developers for a rapidly expanding vacation home real estate market. All of
+                    these changes in the landscape have the potential to impact pollinator populations (Senapathi et al
+                    2017), although the nature and extent of these impacts have not been explicitly examined in this
+                    region.
+                </p>
+            </section>
+            <section id="15" class="scene photo-scene" data-scene-id="place15">
+                <div class="figure " style="background-image:url(img/figure15.jpg);"></div>
+                <p>
+                    Figure 15: Example of the heavily terraced hillsides common in the region (Photo credit: Anmol
+                    Ratna)
+                </p>
+            </section>
+            <section id="16" class="scene photo-scene" data-scene-id="place16">
+                <div class="figure " style="background-image:url(img/figure16.jpg);"></div>
+                <p>
+                    Figure 16: Farms in the region are typically small and comprised of a mix of row crops (such as
+                    pulses, mustards and potatoes) planted in and around the fruit trees (Photo credit: Ginger
+                    Allington)
+                </p>
+            </section>
+            <section id="17" class="scene photo-scene" data-scene-id="place17">
+                <div class="figure " style="background-image:url(img/figure17.jpg);"></div>
+                <p>
+                    Figure 17: To better understand the impact of landscape structure on pollinator diversity and
+                    abundance, our team of geospatial researchers—Ginger Allington, Anmol Ratna and Ankita Rawat—mapped
+                    land use/cover (LULC) within a 500-meter radius around each farm. Using Google Earth imagery as a
+                    starting point, the team developed LULC classifications appropriate for this context. During our
+                    site visit, we fine-tuned the classification system and ground-verified the actual LULC surrounding
+                    each farm. These data will be used to help explain variation in pollinator abundance and diversity
+                    across the farms.
+                    </br>
+                    </br>
+                    <span style="font-style:bold">Understanding pollination limitation in apples</span>
+                    </br>
+                    </br>
+                    Although the problem of pollination scarcity in Himalayan agricultural landscapes has been
+                    suggested, the degree of pollination limitation remains largely unexamined. Further, there is likely
+                    significant spatial variation in the degree to which pollinators are limiting crop production in
+                    heterogeneous mountainous landscapes (Garcia-Camacho and Totland 2009). Thus, to better understand
+                    the extent of pollination limitation in apples, a highly pollinator-dependent crop, we set up a
+                    pollination exclusion experiment in the fifteen orchards. Pollination exclusion experiments are used
+                    to determine the degree to which declines in fruit production are a result of inadequate (or
+                    insufficient) visitation by pollinators. We determine this by comparing fruit-set (the number of
+                    fruits that develop following pollination) on typical branches with those that have been bagged to
+                    prevent bees from visiting the flowers and those that were bagged for pollination by hand (Olhnuud
+                    et al 2022).
+                </p>
+            </section>
+            <section id="18" class="scene photo-scene" data-scene-id="place18">
+                <div class="figure " style="background-image:url(img/figure18.jpg);"></div>
+                <p>
+                    Figure 18: Preeti Virkar trains the rest of the team on how to bag and tag inflorescences and
+                    collect data on the number of buds in each inflorescence (Photo credit: Ann Fraser).
+                </p>
+            </section>
+            <section id="19" class="scene photo-scene" data-scene-id="place19">
+                <div class="row">
+                    <div class="figure col-12 col-sm-8 col-xs-4"
+                        style="background-size: contain; background-image:url(img/figure19a.jpg)"></div>
+                    <div class="figure col-12 col-sm-8 col-xs-4"
+                        style="background-size: contain; background-image:url(img/figure19b.jpg)"></div>
+                </div>
+                <p>
+                    Figure 19: In each orchard, we selected ten apple trees. On each tree, we identified five
+                    inflorescences in the bud stage. Each inflorescence (group of buds) was assigned a treatment and
+                    tagged accordingly. Two inflorescences on each tree were bagged with a fine mesh bag to exclude
+                    pollinators entirely; one inflorescence was bagged so that it would only be hand pollinated once
+                    flowers were in bloom; one inflorescence was left open to be pollinated by bees; and one
+                    inflorescence would be both open and hand pollinated. Differences in fruit-set across the treatments
+                    will allow us to infer the extent to which apples are pollination-limited (Photo credit: Ginger
+                    Allington).
+                </p>
+            </section>
+            <section id="20" class="scene photo-scene" data-scene-id="place20">
+                <div class="figure " style="background-image:url(img/figure20.jpg);"></div>
+                <p>
+                    Figure 20: Here Anmol Ratna, Ginger Allington, and Narendra Raikwal are identifying, tagging, and
+                    bagging inflorescences on a tree (Photo credit: Rajendra Singh).
+                </p>
+            </section>
+            <section id="21" class="scene photo-scene" data-scene-id="place21">
+                <div class="figure " style="background-image:url(img/figure21.jpg);"></div>
+                <p>
+                    Figure 21: We implemented the experimental design described above, but nature does not always comply
+                    with a meticulously designed plan. An unseasonably cold spell delayed flowering and rainy days
+                    prohibited site visits. When we finally had sunny days and were ready to pollinate the two hand
+                    pollination treatments on each tree, we found some inflorescences still in bud stage, while others
+                    were too late to be hand pollinated. Even within a specific inflorescence, some flowers had not even
+                    bloomed yet, while others had already shed their petals. In the photo, one bloom was ready to be
+                    pollinated but the others were still at the bud stage. Inset photo shows a close-up of the male and
+                    female parts of an apple blossom; pollen is apparent on the anthers and the tips of the stigmas are
+                    extended and ready to receive pollen (Photo credit: Russ Rhoads and Ginger Allington).
+                </p>
+            </section>
+            <section id="22" class="scene photo-scene" data-scene-id="place22">
+                <div class="row">
+                    <div class="figure col-12 col-sm-6 col-xs-3"
+                        style="background-size: contain; background-image:url(img/figure22a.jpg)"></div>
+                    <div class="figure col-12 col-sm-6 col-xs-3"
+                        style="background-size: contain; background-image:url(img/figure22b.jpg)"></div>
+                    <div class="figure col-12 col-sm-6 col-xs-3"
+                        style="background-size: contain; background-image:url(img/figure22c.jpg)"></div>
+                </div>
+                <p>
+                    Figure 22: Nature’s caprice demanded research agility. Where possible, we shifted treatments and
+                    identified new inflorescences that were at the proper stage. In some cases, especially where entire
+                    trees had not yet bloomed, we were not able to shift treatments to new inflorescences. Despite these
+                    challenges, we hope to gather sufficient data to be able to discern the extent of pollination
+                    limitation in apples in the region. Here, (l-r) Ann Fraser, Shweta Rana, and Preeti Virkar can be
+                    seen hand pollinating inflorescences that were at the correct stage. We returned to the field sites
+                    at the end of April 2023 to collect data on fruit-set across the treatments. A preliminary analysis
+                    of fruit set data shows significant pollination limitation across farms. At harvest time in July
+                    2023, we plan to return to the field to collect data on seed set within each fruit to fully
+                    comprehend the impact of pollination limitation on fruit development. Combined with a deeper
+                    understanding of pollinator diversity and abundance, this should help farmers find ways to address
+                    the problem of pollination scarcity on their farms (Photo credits: Renu Suyal, Aman Luthra and
+                    Ginger Allington).
+                    </br>
+                    </br>
+                    <span style="font-style:bold">Looking backwards and forward</span>
+                    </br>
+                    </br>
+                    Despite the numerous challenges we faced in the field, our diverse team pulled together and
+                    cooperated on all of the tasks—anthropologists pinned bees, and entomologists interviewed farmers.
+                    Our experience demonstrates not just how important it is to have the right team composed of diverse
+                    backgrounds, interests, and expertise in order to address a complex and urgent socio-environmental
+                    problem, but also the importance of team members who are willing to learn from each other, and band
+                    together. Perhaps even more importantly, our experience demonstrates how important it is, and how
+                    rewarding it can be, to engage research participants in the process of knowledge production. Driven
+                    by an action research framework, this project hopes to co-produce knowledge that is useful and
+                    actionable.
+                </p>
+            </section>
+            <section id="23" class="scene photo-scene" data-scene-id="place23">
+                <div class="figure " style="background-image:url(img/figure23.jpg);"></div>
+                <p>
+                    Figure 23: Farmers, such as one in this photo, were not only intellectually curious but also
+                    incredibly generous. This farmer decided to bring a pot of tea and biscuits into the orchard as
+                    Ankita Rawat and Ann Fraser determine which inflorescences to hand pollinate on this tree (Photo
+                    credit: Kiran Cunningham).
+                </p>
+            </section>
+            <section id="24" class="scene" data-scene-id="place1">
+                <h3>References</h3>
+                <ul class="references">
+                    <li>Basannagari, B., and C. P. Kala. 2013. Climate change and apple farming in Indian Himalayas: A
+                        study of local perceptions and responses. <i>PLoS ONE</i> 8(10): e77976. </li>
+                    <li>Betts, M. G., A. S. Hadley, and U. Kormann. 2019. The Landscape Ecology of Pollination.
+                        <i>Landscape Ecology</i> 34 (5): 961–66.
+                    </li>
+                    <li>Dicks, L.V., Breeze, T.D., Ngo, H.T. et al. A global-scale expert assessment of drivers and
+                        risks associated with pollinator decline. <i>Nature Ecology Evolution</i> 5, 1453–1461 (2021).
+                    </li>
+                    <li>Dirzo R., H. S. Young, M. Galetti, G. Ceballos, N. J. B. Isaac, B. Collen. 2014. Defaunation in
+                        the Anthropocene. <i>Science</i> 345:401–6.</li>
+                    <li>Dunkley, R. A. 2019. Monitoring ecological change in UK woodlands and rivers: An exploration of
+                        the relational geographies of citizen science. <i>Transactions of the Institute of British
+                            Geographers</i> 44(1): 16–31. </li>
+                    <li>García-Camacho, R., and Ø. Totland. 2009. “Pollen Limitation in the Alpine: A Meta-Analysis.”
+                        <i>Arctic, Antarctic, and Alpine Research</i> 41 (1): 103–11.
+                    </li>
+                    <li>Garratt, M. P. D., S. G. Potts, G. Banks, C. Hawes, T. D. Breeze, R. S. O’Connor, and C.
+                        Carvell. 2019. Capacity and Willingness of Farmers and Citizen Scientists to Monitor Crop
+                        Pollinators and Pollination Services. <i>Global Ecology and Conservation</i> 20 (October):
+                        e00781. </li>
+                    <li>Olhnuud, A., Y. Liu, D. Makowski, T. Tscharntke, C. Westphal, P. Wu, M. Wang, and W. van der
+                        Werf. 2022. Pollination Deficits and Contributions of Pollinators in Apple Production: A Global
+                        Meta-Analysis. <i>Journal of Applied Ecology</i> 59 (12): 2911–21. </li>
+                    <li>Pardo, A. and P.A.V. Borges. 2020. Worldwide importance of insect pollination in apple orchards:
+                        A review. <i>Agriculture, Ecosystems and Environment</i> 293: 106839. </li>
+                    <li>Partap, U., and T. Partap. 2002. <i>Warning Signals from the Apple Valleys of the Hindu Kush
+                            Himalayas: Productivity and Pollination Problems.</i> Kathmandu: ICIMOD.</li>
+                    <li>Powney, G. D. et al. 2019. Widespread losses of pollinating insects in Britain. <i>Nature
+                            Communications</i> 10, 1018.</li>
+                    <li>Senapathi, D., M. A. Goddard, W. E. Kunin, and K. C. R. Baldock. 2017. Landscape Impacts on
+                        Pollinator Communities in Temperate Systems: Evidence and Knowledge Gaps. <i>Functional
+                            Ecology</i> 31 (1): 26–37. </li>
+                    <li>Shirk, J., and R. Bonney. 2015. <i>Developing a citizen science program: A synthesis of citizen
+                            science frameworks.</i> Ithaca, NY: Cornell Lab of Ornithology.</li>
+                    <li>Wagner, D. L. 2020. Insect Declines in the Anthropocene. <i>Annual Review of Entomology</i> 65
+                        (1): 457–80.</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <div id="progress">
+        <div id="bar"></div>
+    </div>
+    <div id="bar-top"></div>
+    <div id="bar-bottom"></div>
+    <!-- inject:templates:html -->
+    <!-- endinject -->
+    <script src="../../../js/combined.js"></script>
+    <script>
+        //Figure 1	N/A	N/A
+        //Figure 2	79.61994	29.49698
+        //Figure 3	N/A	N/A
+        //Figure 4	N/A	N/A
+        //Figure 5	79.60005	29.42595
+        //Figure 6	79.62188	29.47940
+        //Figure 7	79.61905	29.46636
+        //Figure 8	79.62039	29.43891
+        //Figure 9	79.61994	29.49698
+        //Figure 10	79.61994	29.49698
+        //Figure 11	79.61994	29.49698
+        //Figure 12	79.61994	29.49698
+        //Figure 13	N/A	N/A
+        //Figure 14	N/A	N/A
+        //Figure 15	79.62039	29.43891
+        //Figure 16	79.60583	29.43626
+        //Figure 17	79.60435	29.43759
+        //Figure 18	79.61994	29.49698
+        //Figure 19	79.62104	29.47824
+        //Figure 20	79.62104	29.47824
+        //Figure 21	79.61994	29.49698
+        //Figure 22a	79.64123	29.45349
+        //Figure 22b	79.61905	29.46636
+        //Figure 22c	79.64123	29.45349
+        //Figure 23	79.64165	29.45075
+        //
+        Focus.Map = Focus.Map || {};
+        Focus.Map.traceOptions = {
+            style: {
+                dashArray: [4, 4]
+            },
+            maxLength: 1
+        };
+        var scenes = {
+            "features": [{
+                "id": "figure5",
+                "type": "geojson",
+                "data": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [79.60005, 29.42595]
+                    },
+                    "properties": {
+                        "name": "Figure 5"
+                    }
+                }
+            }, {
+                "id": "figure6",
+                "type": "geojson",
+                "data": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [79.62188, 29.47940]
+                    },
+                    "properties": {
+                        "name": "Figure 6"
+                    }
+                }
+            }, {
+                "id": "figure7",
+                "type": "geojson",
+                "data": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [79.61905, 29.46636]
+                    },
+                    "properties": {
+                        "name": "Figure 7"
+                    }
+                }
+            }, {
+                "id": "figure8",
+                "type": "geojson",
+                "data": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [79.62039, 29.43891]
+                    },
+                    "properties": {
+                        "name": "Figure 8"
+                    }
+                }
+            }, {
+                "id": "figure9",
+                "type": "geojson",
+                "data": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [79.61994, 29.49698]
+                    },
+                    "properties": {
+                        "name": "Figure 9"
+                    }
+                }
+            }, {
+                "id": "figure15",
+                "type": "geojson",
+                "data": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [79.62039, 29.43891]
+                    },
+                    "properties": {
+                        "name": "Figure 15"
+                    }
+                }
+            }, {
+                "id": "figure16",
+                "type": "geojson",
+                "data": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [79.60583, 29.43626]
+                    },
+                    "properties": {
+                        "name": "Figure 16"
+                    }
+                }
+            }, {
+                "id": "figure17",
+                "type": "geojson",
+                "data": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [79.60435, 29.43759]
+                    },
+                    "properties": {
+                        "name": "Figure 17"
+                    }
+                }
+            }, {
+                "id": "figure18",
+                "type": "geojson",
+                "data": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [79.61994, 29.49698]
+                    },
+                    "properties": {
+                        "name": "Figure 18"
+                    }
+                }
+            }, {
+                "id": "figure19",
+                "type": "geojson",
+                "data": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [79.62104, 29.47824]
+                    },
+                    "properties": {
+                        "name": "Figure 19"
+                    }
+                }
+            }, {
+                "id": "figure20",
+                "type": "geojson",
+                "data": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [79.62104, 29.47824]
+                    },
+                    "properties": {
+                        "name": "Figure 20"
+                    }
+                }
+            }, {
+                "id": "figure21",
+                "type": "geojson",
+                "data": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [79.61994, 29.49698]
+                    },
+                    "properties": {
+                        "name": "Figure 21"
+                    }
+                }
+            }, {
+                "id": "figure22",
+                "type": "geojson",
+                "data": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [79.64123, 29.45349]
+                    },
+                    "properties": {
+                        "name": "Figure 22"
+                    }
+                }
+            }, {
+                "id": "figure23",
+                "type": "geojson",
+                "data": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [79.64165, 29.45075]
+                    },
+                    "properties": {
+                        "name": "Figure 23"
+                    }
+                }
+            }, {
+                "id": "mukteshwar",
+                "type": "geojson",
+                "data": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [79.6479, 29.4722]
+                    },
+                    "properties": {
+                        "name": "mukteshwar"
+                    }
+                }, "style": {
+                    "text": {
+                        "text": "Mukteshwar",
+                        "style": {
+                            'stroke': '#333',
+                            'fill': 'rgba(255, 192, 187)',
+                            'stroke-width': '0.1px',
+                            'font-weight': 'bold',
+                            'font-size': '14px',
+                            'text-shadow': '0px 2px 2px rgba(0,0,0,0.8)'
+                        }
+                    }
+                }
+            }, {
+                "id": "uttarakhand",
+                "type": "geojson",
+                "style": { stroke: true, fill: false, fillOpacity: 0.1, weight: 2, dashArray: '4,4', opacity: 1, fillColor: 'rgba(255, 192, 187)', color: 'rgba(255, 192, 187)' },
+                "text": {
+                    "text": "Uttarakhand",
+                    "style": {
+                        'stroke': '#333',
+                        'fill': 'rgba(255, 192, 187)',
+                        'stroke-width': '0.1px',
+                        'font-weight': 'bold',
+                        'font-size': '18px',
+                        'text-shadow': '0px 2px 2px rgba(0,0,0,0.8)'
+                    }
+                },
+                "data": {
+                    "type": "Feature",
+                    "properties": { "name": "uttarakhand" }, "geometry": { "type": "MultiPolygon", "coordinates": [[[[77.575, 30.385], [77.545, 30.39], [77.545, 30.425], [77.57, 30.45], [77.64, 30.455], [77.7, 30.495], [77.79, 30.535], [77.75, 30.545], [77.71, 30.59], [77.715, 30.62], [77.745, 30.635], [77.75, 30.655], [77.715, 30.675], [77.72, 30.705], [77.71, 30.72], [77.675, 30.735], [77.67, 30.78], [77.72, 30.835], [77.71, 30.855], [77.725, 30.875], [77.725, 30.89], [77.745, 30.9], [77.725, 30.915], [77.715, 30.935], [77.715, 30.97], [77.745, 30.995], [77.785, 30.99], [77.79, 31.015], [77.8, 31.025], [77.78, 31.055], [77.78, 31.07], [77.825, 31.095], [77.835, 31.125], [77.86, 31.14], [77.88, 31.175], [77.91, 31.175], [77.95, 31.2], [77.97, 31.195], [77.975, 31.185], [78, 31.185], [78.015, 31.2], [78.05, 31.215], [78.08, 31.21], [78.125, 31.235], [78.135, 31.25], [78.19, 31.245], [78.195, 31.255], [78.225, 31.255], [78.26, 31.29], [78.28, 31.29], [78.28, 31.3], [78.295, 31.31], [78.375, 31.31], [78.4, 31.29], [78.405, 31.275], [78.425, 31.28], [78.46, 31.26], [78.485, 31.225], [78.53, 31.225], [78.56, 31.255], [78.6, 31.255], [78.645, 31.24], [78.655, 31.225], [78.75, 31.215], [78.805, 31.225], [78.82, 31.215], [78.82, 31.19], [78.835, 31.16], [78.88, 31.125], [78.89, 31.125], [78.895, 31.135], [78.92, 31.135], [78.94, 31.125], [78.97, 31.135], [78.97, 31.16], [78.955, 31.165], [78.93, 31.19], [78.93, 31.2], [78.92, 31.2], [78.905, 31.215], [78.9, 31.24], [78.87, 31.255], [78.865, 31.295], [78.915, 31.345], [78.935, 31.385], [78.99, 31.38], [79, 31.435], [79.02, 31.45], [79.05, 31.455], [79.055, 31.47], [79.08, 31.48], [79.11, 31.475], [79.12, 31.46], [79.16, 31.445], [79.17, 31.42], [79.18, 31.42], [79.195, 31.395], [79.195, 31.375], [79.22, 31.375], [79.255, 31.345], [79.25, 31.315], [79.265, 31.31], [79.27, 31.3], [79.265, 31.265], [79.295, 31.255], [79.32, 31.23], [79.335, 31.155], [79.37, 31.145], [79.38, 31.135], [79.415, 31.135], [79.43, 31.12], [79.44, 31.045], [79.465, 31.055], [79.52, 31.05], [79.555, 30.985], [79.565, 30.975], [79.595, 30.97], [79.6, 30.96], [79.61, 30.97], [79.63, 30.97], [79.645, 30.98], [79.645, 30.99], [79.665, 31.005], [79.69, 30.995], [79.72, 30.995], [79.73, 31.015], [79.745, 31.025], [79.77, 31.02], [79.78, 31.005], [79.88, 30.99], [79.9, 30.97], [79.91, 30.935], [79.93, 30.925], [79.94, 30.905], [79.97, 30.91], [79.975, 30.9], [80.02, 30.885], [80.04, 30.86], [80.07, 30.855], [80.11, 30.805], [80.12, 30.8], [80.14, 30.81], [80.14, 30.82], [80.155, 30.83], [80.18, 30.83], [80.195, 30.82], [80.22, 30.78], [80.25, 30.78], [80.26, 30.77], [80.27, 30.745], [80.27, 30.715], [80.245, 30.675], [80.22, 30.665], [80.235, 30.66], [80.24, 30.65], [80.235, 30.6], [80.255, 30.59], [80.32, 30.585], [80.335, 30.575], [80.335, 30.56], [80.35, 30.545], [80.385, 30.54], [80.425, 30.545], [80.465, 30.51], [80.515, 30.505], [80.515, 30.495], [80.53, 30.49], [80.54, 30.475], [80.58, 30.49], [80.615, 30.49], [80.66, 30.46], [80.68, 30.455], [80.695, 30.435], [80.72, 30.435], [80.75, 30.415], [80.77, 30.39], [80.79, 30.38], [80.79, 30.37], [80.805, 30.365], [80.815, 30.345], [80.835, 30.335], [80.87, 30.335], [80.885, 30.32], [80.915, 30.325], [80.945, 30.29], [80.995, 30.29], [81.02, 30.28], [81.05, 30.255], [81.05, 30.235], [81.065, 30.215], [81.065, 30.2], [81.055, 30.185], [81.005, 30.165], [80.975, 30.17], [80.935, 30.16], [80.905, 30.18], [80.89, 30.165], [80.9, 30.135], [80.895, 30.115], [80.87, 30.105], [80.85, 30.08], [80.82, 30.075], [80.785, 30.035], [80.775, 30.035], [80.775, 30.01], [80.755, 29.985], [80.73, 29.98], [80.69, 29.94], [80.675, 29.935], [80.645, 29.935], [80.63, 29.945], [80.61, 29.94], [80.59, 29.915], [80.59, 29.88], [80.58, 29.855], [80.555, 29.825], [80.515, 29.8], [80.51, 29.78], [80.43, 29.78], [80.42, 29.77], [80.415, 29.745], [80.39, 29.73], [80.405, 29.685], [80.43, 29.67], [80.44, 29.65], [80.44, 29.62], [80.43, 29.61], [80.43, 29.595], [80.395, 29.545], [80.375, 29.54], [80.375, 29.515], [80.33, 29.48], [80.33, 29.47], [80.32, 29.465], [80.32, 29.44], [80.305, 29.43], [80.265, 29.43], [80.27, 29.415], [80.28, 29.415], [80.295, 29.4], [80.3, 29.355], [80.335, 29.325], [80.34, 29.305], [80.32, 29.265], [80.315, 29.23], [80.32, 29.205], [80.305, 29.18], [80.28, 29.175], [80.295, 29.14], [80.29, 29.125], [80.265, 29.12], [80.235, 29.095], [80.185, 29.11], [80.16, 29.09], [80.15, 29.04], [80.155, 29], [80.14, 28.99], [80.13, 28.965], [80.11, 28.965], [80.08, 28.91], [80.085, 28.835], [80.055, 28.8], [80.055, 28.755], [80, 28.7], [79.965, 28.695], [79.935, 28.7], [79.91, 28.715], [79.895, 28.755], [79.875, 28.775], [79.825, 28.795], [79.81, 28.785], [79.775, 28.785], [79.765, 28.795], [79.765, 28.83], [79.775, 28.835], [79.775, 28.86], [79.76, 28.875], [79.755, 28.865], [79.72, 28.86], [79.715, 28.85], [79.7, 28.85], [79.675, 28.83], [79.62, 28.84], [79.61, 28.85], [79.585, 28.83], [79.545, 28.825], [79.535, 28.83], [79.53, 28.865], [79.51, 28.845], [79.405, 28.835], [79.375, 28.88], [79.38, 28.915], [79.365, 28.92], [79.355, 28.935], [79.285, 28.935], [79.205, 29.005], [79.17, 28.995], [79.145, 29.005], [79.135, 29.045], [79.115, 29.065], [79.115, 29.09], [79.125, 29.11], [79.095, 29.11], [79.065, 29.135], [79.05, 29.135], [79.04, 29.105], [79, 29.095], [78.985, 29.1], [78.965, 29.14], [78.955, 29.13], [78.93, 29.135], [78.895, 29.13], [78.875, 29.15], [78.875, 29.165], [78.885, 29.175], [78.87, 29.18], [78.865, 29.19], [78.87, 29.21], [78.85, 29.22], [78.85, 29.235], [78.83, 29.24], [78.815, 29.23], [78.745, 29.27], [78.695, 29.31], [78.695, 29.33], [78.72, 29.355], [78.735, 29.355], [78.75, 29.37], [78.775, 29.365], [78.795, 29.4], [78.845, 29.405], [78.88, 29.43], [78.88, 29.44], [78.78, 29.455], [78.73, 29.485], [78.685, 29.49], [78.63, 29.53], [78.595, 29.545], [78.51, 29.61], [78.49, 29.645], [78.49, 29.685], [78.475, 29.725], [78.42, 29.74], [78.405, 29.755], [78.38, 29.755], [78.34, 29.77], [78.315, 29.74], [78.24, 29.685], [78.22, 29.685], [78.215, 29.695], [78.205, 29.695], [78.2, 29.68], [78.175, 29.66], [78.155, 29.66], [78.15, 29.645], [78.105, 29.61], [78.095, 29.585], [78.06, 29.58], [78.065, 29.57], [78.05, 29.535], [78.005, 29.535], [77.995, 29.525], [77.975, 29.53], [77.955, 29.555], [77.96, 29.565], [77.94, 29.57], [77.925, 29.59], [77.935, 29.63], [77.955, 29.635], [77.925, 29.685], [77.885, 29.68], [77.84, 29.65], [77.8, 29.655], [77.775, 29.67], [77.77, 29.69], [77.74, 29.705], [77.745, 29.78], [77.72, 29.805], [77.71, 29.835], [77.685, 29.855], [77.685, 29.9], [77.71, 29.915], [77.7, 29.92], [77.7, 29.95], [77.72, 29.97], [77.71, 29.98], [77.71, 29.995], [77.745, 30.035], [77.74, 30.06], [77.77, 30.115], [77.81, 30.115], [77.825, 30.125], [77.85, 30.17], [77.88, 30.195], [77.885, 30.22], [77.9, 30.24], [77.875, 30.255], [77.855, 30.25], [77.7, 30.32], [77.675, 30.36], [77.635, 30.39], [77.575, 30.385]]], [[[77.745, 30.9], [77.77, 30.9], [77.77, 30.905], [77.745, 30.9]]]] }
+                }
+            }],
+            "scenes": [
+                {
+                    "id": "place1",
+                    "baseLayer": [{
+                        "type": "esri-basemap",
+                        "url": "Imagery",
+                        "options": {
+                            "detectRetina": true,
+                            "imagerySet": "AerialWithLabels"
+                        }
+                    }],
+                    "layers": [{
+                        "idRef": "mukteshwar",
+                    }, {
+                        "idRef": "uttarakhand"
+                    }],
+                    "zoom": 7,
+                    "style": {
+                        "filter": "sepia(0%)",
+                        "opacity": 0.8,
+                        "background": "url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/cheap_diagonal_fabric.png)"
+                    }
+                },
+                {
+                    "id": "place5",
+                    "baseLayer": [{
+                        "type": "esri-basemap",
+                        "url": "Imagery",
+                        "options": {
+                            "detectRetina": true,
+                            "imagerySet": "AerialWithLabels"
+                        }
+                    }],
+                    "trace": true,
+                    "layers": [{
+                        "idRef": "figure5"
+                    }],
+                    "zoom": 17,
+                    "style": {
+                        "filter": "sepia(0%)",
+                        "opacity": 0.8,
+                        "background": "url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/cheap_diagonal_fabric.png)"
+                    }
+                },
+                {
+                    "id": "place6",
+                    "baseLayer": [{
+                        "type": "esri-basemap",
+                        "url": "Imagery",
+                        "options": {
+                            "detectRetina": true,
+                            "imagerySet": "AerialWithLabels"
+                        }
+                    }],
+                    "trace": true,
+                    "layers": [{
+                        "idRef": "figure6"
+                    }],
+                    "zoom": 17,
+                    "style": {
+                        "filter": "sepia(0%)",
+                        "opacity": 0.8,
+                        "background": "url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/cheap_diagonal_fabric.png)"
+                    }
+                },
+                {
+                    "id": "place7",
+                    "baseLayer": [{
+                        "type": "esri-basemap",
+                        "url": "Imagery",
+                        "options": {
+                            "detectRetina": true,
+                            "imagerySet": "AerialWithLabels"
+                        }
+                    }],
+                    "trace": true,
+                    "layers": [{
+                        "idRef": "figure7"
+                    }],
+                    "zoom": 17,
+                    "style": {
+                        "filter": "sepia(0%)",
+                        "opacity": 0.8,
+                        "background": "url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/cheap_diagonal_fabric.png)"
+                    }
+                },
+                {
+                    "id": "place8",
+                    "baseLayer": [{
+                        "type": "esri-basemap",
+                        "url": "Imagery",
+                        "options": {
+                            "detectRetina": true,
+                            "imagerySet": "AerialWithLabels"
+                        }
+                    }],
+                    "trace": true,
+                    "layers": [{
+                        "idRef": "figure8"
+                    }],
+                    "zoom": 17,
+                    "style": {
+                        "filter": "sepia(0%)",
+                        "opacity": 0.8,
+                        "background": "url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/cheap_diagonal_fabric.png)"
+                    }
+                },
+                {
+                    "id": "place9",
+                    "baseLayer": [{
+                        "type": "esri-basemap",
+                        "url": "Imagery",
+                        "options": {
+                            "detectRetina": true,
+                            "imagerySet": "AerialWithLabels"
+                        }
+                    }],
+                    "trace": true,
+                    "layers": [{
+                        "idRef": "figure9"
+                    }],
+                    "zoom": 17,
+                    "style": {
+                        "filter": "sepia(0%)",
+                        "opacity": 0.8,
+                        "background": "url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/cheap_diagonal_fabric.png)"
+                    }
+                },
+                {
+                    "id": "place15",
+                    "baseLayer": [{
+                        "type": "esri-basemap",
+                        "url": "Imagery",
+                        "options": {
+                            "detectRetina": true,
+                            "imagerySet": "AerialWithLabels"
+                        }
+                    }],
+                    "trace": true,
+                    "layers": [{
+                        "idRef": "figure15"
+                    }],
+                    "zoom": 17,
+                    "style": {
+                        "filter": "sepia(0%)",
+                        "opacity": 0.8,
+                        "background": "url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/cheap_diagonal_fabric.png)"
+                    }
+                },
+                {
+                    "id": "place16",
+                    "baseLayer": [{
+                        "type": "esri-basemap",
+                        "url": "Imagery",
+                        "options": {
+                            "detectRetina": true,
+                            "imagerySet": "AerialWithLabels"
+                        }
+                    }],
+                    "trace": true,
+                    "layers": [{
+                        "idRef": "figure16"
+                    }],
+                    "zoom": 17,
+                    "style": {
+                        "filter": "sepia(0%)",
+                        "opacity": 0.8,
+                        "background": "url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/cheap_diagonal_fabric.png)"
+                    }
+                },
+                {
+                    "id": "place17",
+                    "baseLayer": [{
+                        "type": "esri-basemap",
+                        "url": "Imagery",
+                        "options": {
+                            "detectRetina": true,
+                            "imagerySet": "AerialWithLabels"
+                        }
+                    }],
+                    "trace": true,
+                    "layers": [{
+                        "idRef": "figure17"
+                    }],
+                    "zoom": 17,
+                    "style": {
+                        "filter": "sepia(0%)",
+                        "opacity": 0.8,
+                        "background": "url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/cheap_diagonal_fabric.png)"
+                    }
+                },
+                {
+                    "id": "place18",
+                    "baseLayer": [{
+                        "type": "esri-basemap",
+                        "url": "Imagery",
+                        "options": {
+                            "detectRetina": true,
+                            "imagerySet": "AerialWithLabels"
+                        }
+                    }],
+                    "trace": true,
+                    "layers": [{
+                        "idRef": "figure18"
+                    }],
+                    "zoom": 17,
+                    "style": {
+                        "filter": "sepia(0%)",
+                        "opacity": 0.8,
+                        "background": "url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/cheap_diagonal_fabric.png)"
+                    }
+                },
+                {
+                    "id": "place19",
+                    "baseLayer": [{
+                        "type": "esri-basemap",
+                        "url": "Imagery",
+                        "options": {
+                            "detectRetina": true,
+                            "imagerySet": "AerialWithLabels"
+                        }
+                    }],
+                    "trace": true,
+                    "layers": [{
+                        "idRef": "figure19"
+                    }],
+                    "zoom": 17,
+                    "style": {
+                        "filter": "sepia(0%)",
+                        "opacity": 0.8,
+                        "background": "url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/cheap_diagonal_fabric.png)"
+                    }
+                },
+                {
+                    "id": "place20",
+                    "baseLayer": [{
+                        "type": "esri-basemap",
+                        "url": "Imagery",
+                        "options": {
+                            "detectRetina": true,
+                            "imagerySet": "AerialWithLabels"
+                        }
+                    }],
+                    "trace": true,
+                    "layers": [{
+                        "idRef": "figure20"
+                    }],
+                    "zoom": 17,
+                    "style": {
+                        "filter": "sepia(0%)",
+                        "opacity": 0.8,
+                        "background": "url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/cheap_diagonal_fabric.png)"
+                    }
+                },
+                {
+                    "id": "place21",
+                    "baseLayer": [{
+                        "type": "esri-basemap",
+                        "url": "Imagery",
+                        "options": {
+                            "detectRetina": true,
+                            "imagerySet": "AerialWithLabels"
+                        }
+                    }],
+                    "trace": true,
+                    "layers": [{
+                        "idRef": "figure21"
+                    }],
+                    "zoom": 17,
+                    "style": {
+                        "filter": "sepia(0%)",
+                        "opacity": 0.8,
+                        "background": "url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/cheap_diagonal_fabric.png)"
+                    }
+                },
+                {
+                    "id": "place22",
+                    "baseLayer": [{
+                        "type": "esri-basemap",
+                        "url": "Imagery",
+                        "options": {
+                            "detectRetina": true,
+                            "imagerySet": "AerialWithLabels"
+                        }
+                    }],
+                    "trace": true,
+                    "layers": [{
+                        "idRef": "figure22"
+                    }],
+                    "zoom": 17,
+                    "style": {
+                        "filter": "sepia(0%)",
+                        "opacity": 0.8,
+                        "background": "url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/cheap_diagonal_fabric.png)"
+                    }
+                },
+                {
+                    "id": "place23",
+                    "baseLayer": [{
+                        "type": "esri-basemap",
+                        "url": "Imagery",
+                        "options": {
+                            "detectRetina": true,
+                            "imagerySet": "AerialWithLabels"
+                        }
+                    }],
+                    "trace": true,
+                    "layers": [{
+                        "idRef": "figure23"
+                    }],
+                    "zoom": 17,
+                    "style": {
+                        "filter": "sepia(0%)",
+                        "opacity": 0.8,
+                        "background": "url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/cheap_diagonal_fabric.png)"
+                    }
+                }
+            ]
+        };
+    </script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-79613259-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#nav li.previous a').on('click', function (e) {
+                e.preventDefault();
+                var $prev = $('#nav').find('.sections li.active').prev();
+
+                if (!$prev.hasClass('previous')) {
+                    $prev.find('a').click();
+                }
+            });
+
+            $('#nav li.next a').on('click', function (e) {
+                e.preventDefault();
+                var $next = $('#nav').find('.sections li.active').next();
+
+                if (!$next.hasClass('next')) {
+                    $next.find('a').click();
+                }
+            });
+
+            document.onkeydown = function (e) {
+                if (e.keyCode == '38') {
+                    // up arrow
+                    $('#nav li.previous a').click();
+                }
+                else if (e.keyCode == '40') {
+                    // down arrow
+                    $('#nav li.next a').click();
+                }
+            };
+
+            var overviewMap = new Focus.Views.OverviewMapView({
+                model: new Backbone.Model({
+                    initialScene: new Focus.Models.SceneModel({
+                        baseLayer: {
+                            type: 'tile',
+                            url: '//{s}.tile.thunderforest.com/landscape/{z}/{x}/{y}.png?apikey=b57289fed78a44df8828d53a3e03de00', //'//{s}.tile.stamen.com/toner-lite/{z}/{x}/{y}.png',
+                            params: {
+                                attribution: 'Maps © <a href="http://www.thunderforest.com">Thunderforest</a>, Data © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'
+                            }
+                        },
+                        center: [0, 0],
+                        zoom: 12,
+                        showAttribution: false
+                    })
+                }),
+                showCenterPoint: true
+            });
+            var sceneManager = new Focus.Views.SceneManagerView({
+                el: $('body'),
+                navigatorClass: Focus.Views.ScrollingSceneNavigator,
+                mapEngineClass: Focus.Views.LeafletMapEngine //Focus.Views.OpenLayersMapEngine //LeafletMapEngine
+            });
+
+            var shareView = new Focus.Views.ShareView();
+            shareView.render();
+        });
+
+    </script>
+</body>
+
+</html>
