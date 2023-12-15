@@ -5,6 +5,26 @@ Focus.Volumes = [
         publications: [
             {
                 type: "Feature Article",
+                title: 'Competing National Identities in the Landscape of Rapa Nui',
+                author: "Jesse Edward Tenenbaum",
+                description: "",
+                date: "11/29/23",
+                thumbnail: "publications/articles/rapanui/img/figure3.jpg",
+                url: "publications/articles/rapanui/index.html",
+                location: [],
+            },
+            {
+                type: "Photo Essay",
+                title: 'Pollinator Landscapes in the Himalayas',
+                author: "Aman Luthra, Ginger Allington",
+                description: "",
+                date: "10/31/23",
+                thumbnail: "publications/photoessays/himalayas/img/figure2.jpg",
+                url: "publications/photoessays/himalayas/index.html",
+                location: [],
+            },
+            {
+                type: "Feature Article",
                 title: 'Sentinels of the Sahel: Identifying Values of Baobab Forests and Threats to the Species in Senegal',
                 author: "Karen S. Barton",
                 description: "",
