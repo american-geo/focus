@@ -1,8 +1,33 @@
 var Focus = Focus || {};
 Focus.Volumes = [
     {
+        number: 67,
+        publications: [
+            {
+                type: "Photo Essay",
+                title: 'Going Where No Water Has Gone Before: Ancient/Modern Swiss Irrigation',
+                author: "William E. Doolittle",
+                description: "",
+                date: "1/30/24",
+                thumbnail: "publications/photoessays/irrigation/img/figure20.jpg",
+                url: "publications/photoessays/irrigation/index.html",
+                location: [],
+            }
+        ]
+    },
+    {
         number: 66,
         publications: [
+            {
+                type: "Feature Article",
+                title: 'The Driftless Area: An Exceptional Minnesota Landscape',
+                author: "Martin Mitchell",
+                description: "",
+                date: "12/28/23",
+                thumbnail: "publications/articles/driftless/img/figure7.jpg",
+                url: "publications/articles/driftless/index.html",
+                location: [],
+            },
             {
                 type: "Feature Article",
                 title: 'Competing National Identities in the Landscape of Rapa Nui',
