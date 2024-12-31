@@ -264,7 +264,7 @@
 
                         <div class="author row">
                             <div class="col-lg-3 col-md-3 col-sm-4 col-xs-5">
-                                <img class="author-photo" src="img/author_garber.jpg" />
+                                <img class="author-photo" src="img/author_garber2.jpg" />
                             </div>
                             <div class="col-lg-9 col-md-9 col-sm-8 col-xs-7 author-info">
                                 <span class="name"><b>Peter Garber</b></span>, <span class="organization">Department of Geography, McGill University</span>
@@ -276,6 +276,9 @@
                     <div class="citation author-info"><span class="citation-label">DOI:</span>10.21690/foge/2024.67.6p
                     </div>
                 </div>
+            </br>
+            <p><i>Please note: Map locations are generalised slightly to the commune or urban area so as to maintain confidentiality.</i></p>
+            </br>
                 <p class="start">Nestled in the mountainous highlands of northern Vietnam, many Hmong and Mien (also called Yao in Vietnam) ethnic minority communities are undergoing a significant transformation in their livelihoods. Historically semi-subsistence farmers, these rural, dispersed communities—whose ancestors have inhabited these mountains for over eight generations—are increasingly being compelled to secure cash for a variety of agricultural inputs, including hybrid rice seeds and chemical fertilisers, and other items. </p>
             </section>
             <section id="1" class="scene" data-scene-id="place1" title="Figure 1">
@@ -380,7 +383,33 @@
                     class="location" data-layer-id="figure14">Figure 14</a>: Transporting fish feed on motorbikes in Séo Mý Tỷ, July 2019, Peter Garber</div>
                 <p>As these communities continue to engage with the market economy, their experiences offer valuable insights into the broader processes of livelihood change and market integration in rural ethnic minority regions of Vietnam. The story of fish farming in Sa Pa District is a testament to the ingenuity and perseverance of Hmong and Mien communities, who have found ways to thrive in an increasingly complex, interconnected, and monetized world.</p>
             </br>
+        </br>
+    </br>
+</br>
+</br>
                 <p>For more on this topic please see: Turner, S. and Garber, P. (2024). Ripples of Change: Introduced Fish, Ethnic Minority Farmers, and Lively Commodity Chains in Upland Vietnam. <i>Human Ecology</i>, 1-15. https://doi.org/10.1007/s10745-024-00536-y </p>
+            </br>
+        </br>
+    </br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
             </section>
 
             <div class="row footer-row"></div>
@@ -406,25 +435,518 @@
             "color": "#BE1931"
         };
 
-        var figures = [
-            ['Figure 1', 22.305741472603597, 103.86903647543673],
-            ['Figure 2', 22.25839190230185, 103.89079748268016],
-            ['Figure 3', 22.33626, 103.84363],
-            ['Figure 4', 22.305741472603597, 103.86903647543673],
-            ['Figure 5', 22.361304989679116, 103.7787834365446],
-            ['Figure 6', 22.361304989679116, 103.7787834365446],
-            ['Figure 7', 22.42397, 103.82690],
-            ['Figure 8', 22.431320924961106, 103.79958397263451],
-            ['Figure 9', 22.25839190230185, 103.89079748268016],
-            ['Figure 10', 22.361304989679116, 103.7787834365446],
-            ['Figure 11', 22.361304989679116, 103.7787834365446],
-            ['Figure 12', 22.361304989679116, 103.7787834365446],
-            ['Figure 13', 22.444251470169714, 103.76154543198726],
-            ['Figure 14', 22.361304989679116, 103.7787834365446]
-        ]
+      /*   var figures = [
+            ['figure1', 22.305741472603597, 103.86903647543673],
+            ['figure2', 22.25839190230185, 103.89079748268016],
+            ['figure3', 22.33626, 103.84363],
+            ['figure4', 22.297438632764, 103.86322853218545],
+            ['figure5', 22.361304989679116, 103.7787834365446],
+            ['figure6', 22.361304989679116, 103.7787834365446],
+            ['figure7', 22.42397, 103.82690],
+            ['figure8', 22.431320924961106, 103.79958397263451],
+            ['figure9', 22.25839190230185, 103.89079748268016],
+            ['figure10', 22.25438550291194, 103.89023735415952],
+            ['figure11', 22.25438550291194, 103.89023735415952],
+            ['figure12', 22.25438550291194, 103.89023735415952],
+            ['figure13', 22.444251470169714, 103.76154543198726],
+            ['figure14', 22.257778466085284, 103.88794405254447]
+        ] */
 
+        var scenes = {
+            "features": [{
+                "id": "figure1",
+                "type": "geojson",
+                "data": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [103.86903647543673, 22.305741472603597]
+                    },
+                    "properties": {
+                        "name": "Figure 1"
+                    }
+                }
+            }, 
+            {
+                "id": "figure2",
+                "type": "geojson",
+                "data": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [103.89079748268016, 22.25839190230185]
+                    },
+                    "properties": {
+                        "name": "Figure 2"
+                    }
+                }
+            },
+            {
+                "id": "figure3",
+                "type": "geojson",
+                "data": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [103.84363, 22.33626]
+                    },
+                    "properties": {
+                        "name": "Figure 3"
+                    }
+                }
+            },
+            {
+                "id": "figure4",
+                "type": "geojson",
+                "data": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [103.86322853218545, 22.297438632764]
+                    },
+                    "properties": {
+                        "name": "Figure 4"
+                    }
+                }
+            },
+            {
+                "id": "figure5",
+                "type": "geojson",
+                "data": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [103.7787834365446, 22.361304989679116]
+                    },
+                    "properties": {
+                        "name": "Figure 5"
+                    }
+                }
+            },
+            {
+                "id": "figure6",
+                "type": "geojson",
+                "data": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [103.7787834365446, 22.361304989679116]
+                    },
+                    "properties": {
+                        "name": "Figure 6"
+                    }
+                }
+            },
+            {
+                "id": "figure7",
+                "type": "geojson",
+                "data": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [103.82690, 22.42397]
+                    },
+                    "properties": {
+                        "name": "Figure 7"
+                    }
+                }
+            },
+            {
+                "id": "figure8",
+                "type": "geojson",
+                "data": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [103.79958397263451, 22.431320924961106]
+                    },
+                    "properties": {
+                        "name": "Figure 8"
+                    }
+                }
+            },
+            {
+                "id": "figure9",
+                "type": "geojson",
+                "data": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [103.89079748268016, 22.25839190230185]
+                    },
+                    "properties": {
+                        "name": "Figure 9"
+                    }
+                }
+            },
+            {
+                "id": "figure10",
+                "type": "geojson",
+                "data": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [103.89023735415952, 22.25438550291194]
+                    },
+                    "properties": {
+                        "name": "Figure 10"
+                    }
+                }
+            },
+            {
+                "id": "figure11",
+                "type": "geojson",
+                "data": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [103.89023735415952, 22.25438550291194]
+                    },
+                    "properties": {
+                        "name": "Figure 11"
+                    }
+                }
+            },
+            {
+                "id": "figure12",
+                "type": "geojson",
+                "data": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [103.89023735415952, 22.25438550291194]
+                    },
+                    "properties": {
+                        "name": "Figure 12"
+                    }
+                }
+            },
+            {
+                "id": "figure13",
+                "type": "geojson",
+                "data": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [103.76154543198726, 22.444251470169714]
+                    },
+                    "properties": {
+                        "name": "Figure 13"
+                    }
+                }
+            },
+            {
+                "id": "figure14",
+                "type": "geojson",
+                "data": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [103.88794405254447, 22.257778466085284]
+                    },
+                    "properties": {
+                        "name": "Figure 14"
+                    }
+                }
+            }],
 
-        var features_array = figures.map(function (feature, i) {
+        "scenes": [
+            {
+                    "id": "place0",
+                    "baseLayer": [{
+                        "type": "esri-basemap",
+                        "url": "NationalGeographic",
+                        "options": {
+                            "detectRetina": true,
+                        }
+                    }],
+                    "zoom": 6,
+                    "center": [105.597373, 16.701621]
+                },
+            {
+                    "id": "place1",
+                    "baseLayer": [{
+                        "type": "esri-basemap",
+                        "url": "Imagery",
+                        "options": {
+                            "detectRetina": true,
+                            "imagerySet": "AerialWithLabels"
+                        }
+                    }],
+                    "layers": [{
+                        "idRef": "figure1"
+                    }],
+                    "zoom": 17,
+                    "style": {
+                        "filter": "sepia(0%)",
+                        "opacity": 0.8,
+                        "background": "url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/cheap_diagonal_fabric.png)"
+                    }
+                },
+                {
+                    "id": "place2",
+                    "baseLayer": [{
+                        "type": "esri-basemap",
+                        "url": "Imagery",
+                        "options": {
+                            "detectRetina": true,
+                            "imagerySet": "AerialWithLabels"
+                        }
+                    }],
+                    "layers": [{
+                        "idRef": "figure2"
+                    }],
+                    "zoom": 17,
+                    "style": {
+                        "filter": "sepia(0%)",
+                        "opacity": 0.8,
+                        "background": "url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/cheap_diagonal_fabric.png)"
+                    }
+                },
+                {
+                    "id": "place3",
+                    "baseLayer": [{
+                        "type": "esri-basemap",
+                        "url": "Imagery",
+                        "options": {
+                            "detectRetina": true,
+                            "imagerySet": "AerialWithLabels"
+                        }
+                    }],
+                    "layers": [{
+                        "idRef": "figure3"
+                    }],
+                    "zoom": 17,
+                    "style": {
+                        "filter": "sepia(0%)",
+                        "opacity": 0.8,
+                        "background": "url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/cheap_diagonal_fabric.png)"
+                    }
+                },
+                {
+                    "id": "place4",
+                    "baseLayer": [{
+                        "type": "esri-basemap",
+                        "url": "Imagery",
+                        "options": {
+                            "detectRetina": true,
+                            "imagerySet": "AerialWithLabels"
+                        }
+                    }],
+                    "layers": [{
+                        "idRef": "figure4"
+                    }],
+                    "zoom": 17,
+                    "style": {
+                        "filter": "sepia(0%)",
+                        "opacity": 0.8,
+                        "background": "url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/cheap_diagonal_fabric.png)"
+                    }
+                },
+                {
+                    "id": "place5",
+                    "baseLayer": [{
+                        "type": "esri-basemap",
+                        "url": "Imagery",
+                        "options": {
+                            "detectRetina": true,
+                            "imagerySet": "AerialWithLabels"
+                        }
+                    }],
+                    "layers": [{
+                        "idRef": "figure5"
+                    }],
+                    "zoom": 17,
+                    "style": {
+                        "filter": "sepia(0%)",
+                        "opacity": 0.8,
+                        "background": "url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/cheap_diagonal_fabric.png)"
+                    }
+                },
+                {
+                    "id": "place6",
+                    "baseLayer": [{
+                        "type": "esri-basemap",
+                        "url": "Imagery",
+                        "options": {
+                            "detectRetina": true,
+                            "imagerySet": "AerialWithLabels"
+                        }
+                    }],
+                    "layers": [{
+                        "idRef": "figure6"
+                    }],
+                    "zoom": 17,
+                    "style": {
+                        "filter": "sepia(0%)",
+                        "opacity": 0.8,
+                        "background": "url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/cheap_diagonal_fabric.png)"
+                    }
+                },
+                {
+                    "id": "place7",
+                    "baseLayer": [{
+                        "type": "esri-basemap",
+                        "url": "Imagery",
+                        "options": {
+                            "detectRetina": true,
+                            "imagerySet": "AerialWithLabels"
+                        }
+                    }],
+                    "layers": [{
+                        "idRef": "figure7"
+                    }],
+                    "zoom": 17,
+                    "style": {
+                        "filter": "sepia(0%)",
+                        "opacity": 0.8,
+                        "background": "url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/cheap_diagonal_fabric.png)"
+                    }
+                },
+                {
+                    "id": "place8",
+                    "baseLayer": [{
+                        "type": "esri-basemap",
+                        "url": "Imagery",
+                        "options": {
+                            "detectRetina": true,
+                            "imagerySet": "AerialWithLabels"
+                        }
+                    }],
+                    "layers": [{
+                        "idRef": "figure8"
+                    }],
+                    "zoom": 17,
+                    "style": {
+                        "filter": "sepia(0%)",
+                        "opacity": 0.8,
+                        "background": "url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/cheap_diagonal_fabric.png)"
+                    }
+                },
+                {
+                    "id": "place9",
+                    "baseLayer": [{
+                        "type": "esri-basemap",
+                        "url": "Imagery",
+                        "options": {
+                            "detectRetina": true,
+                            "imagerySet": "AerialWithLabels"
+                        }
+                    }],
+                    "layers": [{
+                        "idRef": "figure9"
+                    }],
+                    "zoom": 17,
+                    "style": {
+                        "filter": "sepia(0%)",
+                        "opacity": 0.8,
+                        "background": "url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/cheap_diagonal_fabric.png)"
+                    }
+                },
+                {
+                    "id": "place10",
+                    "baseLayer": [{
+                        "type": "esri-basemap",
+                        "url": "Imagery",
+                        "options": {
+                            "detectRetina": true,
+                            "imagerySet": "AerialWithLabels"
+                        }
+                    }],
+                    "layers": [{
+                        "idRef": "figure10"
+                    }],
+                    "zoom": 17,
+                    "style": {
+                        "filter": "sepia(0%)",
+                        "opacity": 0.8,
+                        "background": "url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/cheap_diagonal_fabric.png)"
+                    }
+                },
+                {
+                    "id": "place11",
+                    "baseLayer": [{
+                        "type": "esri-basemap",
+                        "url": "Imagery",
+                        "options": {
+                            "detectRetina": true,
+                            "imagerySet": "AerialWithLabels"
+                        }
+                    }],
+                    "layers": [{
+                        "idRef": "figure11"
+                    }],
+                    "zoom": 17,
+                    "style": {
+                        "filter": "sepia(0%)",
+                        "opacity": 0.8,
+                        "background": "url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/cheap_diagonal_fabric.png)"
+                    }
+                },
+                {
+                    "id": "place12",
+                    "baseLayer": [{
+                        "type": "esri-basemap",
+                        "url": "Imagery",
+                        "options": {
+                            "detectRetina": true,
+                            "imagerySet": "AerialWithLabels"
+                        }
+                    }],
+                    "layers": [{
+                        "idRef": "figure12"
+                    }],
+                    "zoom": 17,
+                    "style": {
+                        "filter": "sepia(0%)",
+                        "opacity": 0.8,
+                        "background": "url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/cheap_diagonal_fabric.png)"
+                    }
+                },
+                {
+                    "id": "place13",
+                    "baseLayer": [{
+                        "type": "esri-basemap",
+                        "url": "Imagery",
+                        "options": {
+                            "detectRetina": true,
+                            "imagerySet": "AerialWithLabels"
+                        }
+                    }],
+                    "layers": [{
+                        "idRef": "figure13"
+                    }],
+                    "zoom": 17,
+                    "style": {
+                        "filter": "sepia(0%)",
+                        "opacity": 0.8,
+                        "background": "url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/cheap_diagonal_fabric.png)"
+                    }
+                },
+                {
+                    "id": "place14",
+                    "baseLayer": [{
+                        "type": "esri-basemap",
+                        "url": "Imagery",
+                        "options": {
+                            "detectRetina": true,
+                            "imagerySet": "AerialWithLabels"
+                        }
+                    }],
+                    "layers": [{
+                        "idRef": "figure14"
+                    }],
+                    "zoom": 17,
+                    "style": {
+                        "filter": "sepia(0%)",
+                        "opacity": 0.8,
+                        "background": "url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/cheap_diagonal_fabric.png)"
+                    }
+                },
+    ],
+            }
+
+        /* var features_array = figures.map(function (feature, i) {
             console.log(feature[2], i)
             return {
                 "id": "figure".concat(i),
@@ -441,8 +963,11 @@
                 },
                 "style": pointStyle
             };
-        });
-        var scenes_array = figures.map(function (feature, i) {
+        }); */
+
+
+
+        /* var scenes_array = figures.map(function (feature, i) {
             return {
                 "id": "place".concat(i),
                 "baseLayer": [{
@@ -460,7 +985,7 @@
                 }],
                 "zoom": 17
             };
-        });
+        }); */
         var scenes = {
             "features": features_array,
             "scenes": [{
