@@ -371,7 +371,7 @@
             <section id="9" class="scene" data-scene-id="place9" title="Figure 9">
                 <h3>9. San Andrés: An Island Adapting to Climate Change</h3>
                 <div class="figure figure_large" style="background-image:url(img/figure9.jpg);"></div>
-                <div class="caption"><a class="location" data-layer-id="figure9">Figure 9</a>: Beach erosion and restoration efforts on San Andrés Island.
+                <div class="caption"><a class="location" data-layer-id="figure9">Figure 9</a>: Hurricane Beryl threatens San Andrés island.
                 </div>
                 <p>
                     The geography of San Andrés, a small island in the Caribbean Sea, is far afield from mainland Colombia but is an important part of the country’s colonial history. Surrounded by coral reefs and sandy beaches, the island is highly vulnerable to climate change impacts like rising sea levels and storm surges. Spatial strategies, such as mangrove reforestation and artificial reef construction, are essential to preserving its coastal integrity. San Andrés also serves as an excellent geographic case study for understanding how small islands can adapt to a rapidly changing climate.  The authors were in fact scheduled to visit San Andrés as a side trip, but Hurricane Beryl—the earliest Category 5 hurricane on record—ironically derailed our journey to this important site.
@@ -423,8 +423,13 @@
 
             <section id="14" class="scene" data-scene-id="place14" title="Figure 14">
                 <h3>14. Hybrid Public Transit in Medellín</h3>
-                <div class="figure figure_large" style="background-image:url(img/figure14.jpg);"></div>
-                <div class="caption"><a class="location" data-layer-id="figure14">Figure 14</a>: Electric buses operating in Medellín.
+                <div class="row">
+                    <div class="figure col-12 col-sm-6 col-xs-6"
+                        style="background-size: contain; background-image:url(img/figure14a.jpg)"></div>
+                    <div class="figure col-12 col-sm-6 col-xs-6"
+                        style="background-size: contain; background-image:url(img/figure14b.jpg)"></div>
+                </div>
+                <div class="caption"><a class="location" data-layer-id="figure14a">Figure 14a</a> and <a class="location" data-layer-id="figure14b">Figure 14b</a>: Electric bus and tramway operating in Medellín.
                 </div>
                 <p>Medellín’s hybrid electric buses are reshaping the city’s transportation geography by reducing the environmental impact of travel across its hilly terrain. These buses operate on routes that connect key transit hubs, bridging spatial divides between neighborhoods and reducing reliance on private vehicles. This integration of these clean energy solutions into the city’s transit network highlights Medellín’s commitment to sustainability and spatial equity.
                 </p>
@@ -737,13 +742,26 @@
                     }
                 }
             }, {
-                "id": "figure14",
+                "id": "figure14a",
                 "type": "geojson",
                 "data": {
                     "type": "Feature",
                     "geometry": {
                         "type": "Point",
-                        "coordinates": [-75.5704, 6.2562]
+                        "coordinates": [-75.55506, 6.26793]
+                    },
+                    "properties": {
+                        "name": "Figure 14"
+                    }
+                }
+            }, {
+                "id": "figure14b",
+                "type": "geojson",
+                "data": {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [-75.56209, 6.24608]
                     },
                     "properties": {
                         "name": "Figure 14"
@@ -1175,7 +1193,10 @@
                         }
                     }],
                     "layers": [{
-                        "idRef": "figure14"
+                        "idRef": "figure14a"
+                    },
+                    {
+                        "idRef": "figure14b"
                     }],
                     "zoom": 16,
                     "style": {
