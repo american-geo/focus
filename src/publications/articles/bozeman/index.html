@@ -277,7 +277,7 @@
                     <div class="citation author-info"><span class="citation-label">DOI:</span>10.21690/foge/2025.68.2f
                     </div>
                 </div>
-                <p class="start">	It was the summer of 1975. My dad and I cruised into town riding low in his red 1962 Chevy Impala. We had been on a 10-day camping trip that included Idaho’s <a class="location" data-layer-id="sawtooth">Sawtooth Mountains</a>, the <a class="location" data-layer-id="bitterroot">Bitterroot Range</a>, and southwest Montana’s <a class="location" data-layer-id="wise">Wise River country</a>, a long way from home in southern California. We were ready for a stop for the night, a comfortable motel, a hot shower, and a roof over our heads between camping spots. We motored into downtown Bozeman, checking out the fine two- and three-story brick buildings that dominated Main Street (Figs. 1 and 2). We settled into a well-aged motel, the modest Alpine Lodge ($14/night) on the east side of town. Our evening stroll took us into the heart of a pleasant cow and college town (population 18,000), home to <a class="location" data-layer-id="msu">Montana State University</a>, a plethora of farm and ranch businesses, and the usual midtown accumulation of bars, banks, and hardware stores. Little did I realize that evening that I was beginning a long-term relationship with a place and a landscape that became an integral part of my own career as a geographer. As it happened, downtown Bozeman has also been a setting that has changed a great deal, right along with me. It has become a fascinating laboratory of an American West that took the modest little town I met in 1975 and transformed it into the trendy Bozone (or “Boz Angeles”) that I know today.</p>
+                <p class="start">	It was the summer of 1975. My dad and I cruised into town riding low in his red 1962 Chevy Impala. We had been on a 10-day camping trip that included Idaho’s <a class="location" data-layer-id="sawtooth">Sawtooth Mountains</a>, the <a class="location" data-layer-id="bitterroot">Bitterroot Range</a>, and southwest Montana’s <a class="location" data-layer-id="wise">Wise River country</a>, a long way from home in southern California. We were ready for a stop for the night, a comfortable motel, a hot shower, and a roof over our heads between camping spots. We motored into downtown <a class="location" data-layer-id="bozeman">Bozeman</a>, checking out the fine two- and three-story brick buildings that dominated Main Street (Figs. 1 and 2). We settled into a well-aged motel, the modest Alpine Lodge ($14/night) on the east side of town. Our evening stroll took us into the heart of a pleasant cow and college town (population 18,000), home to Montana State University, a plethora of farm and ranch businesses, and the usual midtown accumulation of bars, banks, and hardware stores. Little did I realize that evening that I was beginning a long-term relationship with a place and a landscape that became an integral part of my own career as a geographer. As it happened, downtown Bozeman has also been a setting that has changed a great deal, right along with me. It has become a fascinating laboratory of an American West that took the modest little town I met in 1975 and transformed it into the trendy Bozone (or “Boz Angeles”) that I know today.</p>
                 <div class="figure figure_large" style="background-image:url(img/fig1.jpg);"></div>
                 <div class="caption">Figure 1. View of Downtown Bozeman, circa 1970. This view looks west through the center of downtown. Note the Baxter Hotel, distant right. Source: author’s collection.</div>
                 <div class="figure figure_large" style="background-image:url(img/fig2.jpg);"></div>
@@ -517,6 +517,22 @@
                         },
                         "properties": {
                             'name': 'Montana State University'
+
+                        },
+                    },
+                    "style": figureStyle
+                },
+                {
+                    "id": "bozeman",
+                    "type": "geojson",
+                    "data": {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [-111.05515081700405, 45.66712522471671]
+                        },
+                        "properties": {
+                            'name': 'Bozeman'
 
                         },
                     },
@@ -6431,7 +6447,7 @@
                         "id": "place1",
                         "baseLayer": [{
                             "type": "esri-basemap",
-                            "url": "NationalGeographic",
+                            "url": "Topographic",
                             "options": {
                                 "detectRetina": true,
 
@@ -6442,7 +6458,7 @@
                             { "idRef": "sawtooth" },
                             { "idRef": "bitterroot" },
                             { "idRef": "wise" },
-                            { "idRef": "msu" }
+                            { "idRef": "bozeman" }
                         ]
                     },
                     {
