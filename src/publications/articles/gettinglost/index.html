@@ -1,0 +1,1146 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Getting Lost: Reflections on Geographical Imagination </title>
+    <meta name="description" content="Getting Lost: Reflections on Geographical Imagination ">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="getting lost,geographical imagination,public space,economic geography">
+    <meta name="author" content="Joseph S. Wood">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Place favicon.ico in the root directory -->
+    <link href="https://fonts.googleapis.com/css?family=Urbanist|Poppins|Raleway|Titillium+Web" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <link href="../../../css/combined.css" rel="stylesheet" type="text/css">
+    <script src="../../../js/vendor/modernizr-2.8.3.min.js"></script>
+    <style>
+        #text {
+            background: #fff;
+        }
+
+        .scene {
+            color: black;
+        }
+
+        div.caption {
+            font-size: 0.8rem;
+            font-family: 'Raleway', serif;
+            color: #535353;
+            line-height: 1.9em;
+        }
+
+        #text.photo-essay {
+            background: rgb(235, 236, 247) !important;
+        }
+
+        #nav,
+        #toggle-map {
+            background: #c5a465;
+        }
+
+        #text a,
+        a.location,
+        div.tooltip a {
+            color: rgb(197, 164, 101);
+            border-bottom-color: rgb(197, 164, 101);
+        }
+
+        #text a:hover,
+        a.location:hover,
+        div.tooltip a {
+            background: rgba(131, 65, 52, 0.1);
+            text-decoration: none;
+        }
+
+        path.line {
+            stroke: #c5a465 !important;
+        }
+
+        path.marker-path {
+            stroke: #c5a465 !important;
+            fill: #c5a465 !important;
+        }
+
+        progress::-webkit-progress-bar {
+            background-color: transparent;
+        }
+
+        progress::-webkit-progress-value {
+            background-color: rgb(197, 164, 101);
+            -webkit-transition: width 0.5s ease-in-out;
+        }
+
+        progress::-moz-progress-bar {
+            background-color: rgb(197, 164, 101);
+            transition: width 0.5s ease-in-out;
+            -moz-transition: width 0.5s ease-in-out;
+        }
+
+        progress::-ms-fill {
+            background-color: rgb(197, 164, 101);
+            -ms-transition: width 0.5s ease-in-out;
+        }
+
+        #text.photo-essay h2 {
+            font-family: 'Special Elite', system-ui;
+            text-transform: none;
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: white;
+            text-shadow: 0px 1px 3px black;
+            margin-top: 0px;
+            margin-bottom: 40px;
+        }
+
+        #text.photo-essay h2 .sub-title {
+            font-size: 2.2rem;
+            font-weight: 300;
+        }
+
+
+        #text.photo-essay h3 {
+            font-family: 'Special Elite', system-ui;
+            text-transform: none;
+            color: rgba(131, 65, 52, 0.856);
+            font-weight: bold;
+            font-style: italic;
+        }
+
+
+        p a,
+        .caption a {
+            color: rgb(197, 164, 101) !important;
+            border-bottom: solid 3px rgb(45, 61, 61) !important;
+            line-height: 1.2em;
+        }
+
+        p,
+        .references {
+            line-height: 1.6;
+        }
+
+        a.location {
+            color: rgb(131, 65, 52) !important;
+            border-bottom: dotted 2px rgb(45, 61, 61) !important;
+        }
+
+        .author {
+            margin-bottom: 1em;
+            font-size: 14px !important;
+            opacity: 1;
+        }
+
+        .author-photo {
+            width: 100%;
+            margin-right: 0px;
+            vertical-align: middle;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+        }
+
+        .author-info {
+            *background-color: rgba(231, 250, 248, 0.89);
+            font-size: 1.2em;
+            margin-top: 5px;
+            color: white;
+            text-shadow: 0px 1px 3px black;
+        }
+
+        div.figure.figure_large {
+            background-size: contain;
+            height: 600px;
+        }
+
+        div.figure.figure_size {
+            background-size: contain !important;
+        }
+
+        /*leaflet popup*/
+        div.leaflet-div-icon {
+            background-color: rgba(79, 90, 95, 0.9);
+            width: auto !important;
+            min-width: 100px !important;
+            z-index: 1000 !important;
+        }
+
+
+        .start::first-letter {
+            color: rgb(131, 65, 52);
+            padding: 0 .3rem;
+            margin: 0 .3rem 0 0;
+            font-family: 'Urbanist', sans-serif;
+            font-size: 4rem;
+            float: left;
+            line-height: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+    <progress></progress>
+    <div id="nav" class="dotstyle dotstyle-scaleup">
+        <ul class="nav share">
+            <li>
+                <a data-toggle="tooltip" title="Share on Twitter"
+                    href="https://twitter.com/intent/tweet?status=[TITLE]+[URL]" class="twitter-share-button"><span
+                        class="fa fa-twitter"></span></a>
+            </li>
+            <li>
+                <a data-toggle="tooltip" title="Share on Facebook"
+                    href="http://www.facebook.com/sharer/sharer.php?u=[URL]&title=[TITLE]"><span
+                        class="share-button fa fa-facebook-official"></span></a>
+            </li>
+            <li>
+                <a data-toggle="tooltip" title="Share via E-mail"
+                    href="mailto:?subject=[TITLE]&body=[TITLE]: [URL]"><span
+                        class="share-button fa fa-envelope"></span></a>
+            </li>
+        </ul>
+        <ul class="nav previous">
+            <li class="previous">
+                <a href="#"><span class="fa fa-chevron-up"></span></a>
+            </li>
+        </ul>
+        <ul class="nav sections">
+        </ul>
+        <ul class="nav next">
+            <li class="next">
+                <a href="#"><span class="fa fa-chevron-down"></span></a>
+            </li>
+        </ul>
+    </div>
+    <!-- Add your site or application content here -->
+    <div id="background"></div>
+    <div id="map" class="photo-essay"></div>
+    <div id="overview-map" class="title-hidden transparent"></div>
+    <div id="foreground"></div>
+    <div id="photos">
+        <div id="photo-caption"></div>
+    </div>
+    <div id="shadow"></div>
+    <div id="toggle-map" class="focus-black"><span class="fa fa-map-o" style="color: #fff; margin: 8px;"></span></div>
+    <div id="main-nav" class="light">
+        <div id="menu-icon-wrapper2" class="menu-icon-wrapper" style="visibility: visible;">
+            <svg width="1000px" height="1000px">
+                <path id="pathD" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"
+                    style="stroke-dashoffset: 5803.15; stroke-dasharray: 2901.57, 2981.57, 240;"></path>
+                <path id="pathE" d="M 300 500 L 700 500"
+                    style="stroke-dashoffset: 800; stroke-dasharray: 400, 480, 240;"></path>
+                <path id="pathF" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"
+                    style="stroke-dashoffset: 6993.11; stroke-dasharray: 3496.56, 3576.56, 240;"></path>
+            </svg>
+
+            <div id="menu-icon-trigger2" class="menu-icon-trigger"></div>
+        </div>
+        <a class="main-link" href="../../../index.html"><img id="logo" src="../../../img/focus-logo.svg" /></a>
+        <ul class="nav share">
+            <li>
+                <a data-toggle="tooltip" title="Share on Twitter"
+                    href="https://twitter.com/intent/tweet?status=[TITLE]+[URL]" class="twitter-share-button"><span
+                        class="fa fa-twitter"></span></a>
+            </li>
+            <li>
+                <a data-toggle="tooltip" title="Share on Facebook"
+                    href="http://www.facebook.com/sharer/sharer.php?u=[URL]&title=[TITLE]"><span
+                        class="share-button fa fa-facebook-official"></span></a>
+            </li>
+            <li>
+                <a data-toggle="tooltip" title="Share via E-mail"
+                    href="mailto:?subject=[TITLE]&body=[TITLE]: [URL]"><span
+                        class="share-button fa fa-envelope"></span></a>
+            </li>
+        </ul>
+        <div id="menu"></div>
+    </div>
+    <div id="text" class="photo-essay">
+        <div class="content scenes">
+            <section id="0" class="scene" data-scene-id="place0" title="Introduction">
+                <div class="title title-photo"
+                    style="background-image: linear-gradient(0deg, rgba(70, 70, 70, 0.6), rgba(70, 70, 70, 0.425)), url(img/fig3b.jpg);">
+                    <h2>Getting Lost: Reflections on Geographical Imagination</span></h2>
+                    <div class="container-fluid">
+
+                        <div class="author row">
+                            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                                <img class="author-photo" src="img/author.jpg" />
+                            </div>
+                            <div class="col-lg-9 col-md-9 col-sm-8 col-xs-7 author-info">
+                                <span class="name">Joseph S. Wood</span> </br> <span
+                                    class="organization"><i>University of Baltimore</i>
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="citation author-info"><span class="citation-label">DOI:</span>10.21690/foge/2026.69.2f
+                    </div>
+                </div>
+                <h3>Introduction</h3>
+                <p class="start">During the nineteenth century and for a few decades after, geographers considering human use of the earth too often found themselves in a rabbit hole called environmental determinism, confusing co-existence with causation. Some of them never actually travelled elsewhere to look at others’ use of the earth themselves but depended entirely on stories they read. I would describe these geographers as truly lost, their eyes closed, their wonderings and wanderings myopic. The result: many false conclusions about countries that too often are still part of “common sense” political thinking.</p>
+                <p>But to me, getting lost has an entirely different aspect. For geographers, it is an important talent and tool. It gets us wandering around, looking at stuff, observing patterns and relationships, all to make sense of what you see. Getting lost, as I use it here, implies a disciplined, empirical seeking for meaning. It is a mode of challenging assumptions, of opening one’s mind to new interpretations, becoming immersed, and then reemerging with new findings. Getting lost is how science works: pursuing clues that lead to hypothesis testing and finding meaning. It is what Alexander von Humboldt did when canoeing on the <a class="location" data-layer-id="orinoco">Orinoco River</a> and imagining the concept of river capture, climbing the Andes Mountains and imagining vertical zonation, and taking a horse-drawn sled across a good part of <a class="location" data-layer-id="siberia">frozen Eurasia</a> and imagining continentality. It is what Charles Darwin accomplished with his <a class="location" data-layer-id="galapagos">voyage</a> on the <i>Beagle</i> and many more years thinking deeply about species differentiation and development and imagining evolution to explain it all.</p>
+                <p>This is also what Henry David Thoreau, a geographer at heart, did when he undertook and wrote about regular walks in <a class="location" data-layer-id="concord">Concord, Massachusetts</a>, boat trips on the Concord and Merrimack Rivers, and visits to not so far away Cape Cod or the New Hampshire mountains. His best-known work is <i>Walden</i> (Thoreau 1845) of course, but among my favorites is “Wild Apples” (Thoreau 1862). In both, he exemplified the enlightenment that derives from engaging closely with the landscape, reflecting upon what one sees, deeply researching what others have recorded, identifying what others have ignored, and finally imagining how to live meaningfully. Exercising geographical imagination, Thoreau came to understand the relative location of wild apples as indicators of how English settlers had laid out a cultural landscape over an indigenous one two centuries before he himself ever walked New England pathways.</p>
+                <p>During the early twentieth century, philosopher John Dewey argued that learning is best accomplished by doing. With respect to geography, Dewey argued: “It is in the nature of an experience to have implications which go far beyond what may at first be consciously noted in it. Bringing these connections or implications to consciousness enhances the meaning of the experience” (Dewey 1916, p. 225). It is with such disciplined, empirical observation, of “bringing to consciousness,” that my generation of geography students learned how to make meaning of the landscape. We read, among so many others, the American Geographical Society’s one-time director John K. Wright (1947) on geographic imagination; the noted landscape critic J. B. Jackson who wrote movingly about the vernacular landscape (Horowitz 1997); and my own mentors, Wilbur Zelinsky (Wood 2015) and Peirce Lewis (Marsh and Wood 2021). And, now, two recent articles have offered deeply theoretical arguments for attentive observation and for sense-making in geography (Gandy 2024; Pohl and Helbrecht 2025). </p>
+                <p>To understand the value of this kind of getting lost, think about the way you have attentively read a book or listened to music and how that let you draw personal meaning, sense- making if you prefer, that enlarged your understanding of the world. Such getting lost is a critical liberal art, for, as we draw deeper into trying to understand something without preconception, we come to appreciation and furtherance of knowledge that helps us find our way forward. Importantly, the opposite of getting lost is teleological thinking that confuses existence with inevitability, ignoring contingency. Our form of getting lost is about <i>liberalis</i>, what it takes to make one free, free of the ideas of others. It is about owning one’s own ideas, about breaking away from tradition or convention. </p>
+                <h3>A Career Getting Lost</h3>
+                <p>As I assess the course of my career of a half century, getting lost in public spaces pulled me along. I’ve always been drawn to study civic life especially in places new to me. I’ve been driven to get lost, both literally and metaphorically, where people gather for economic, social, and political purposes, whether in <a class="location" data-layer-id="usm">New England villages</a>, an old public market in <a class="location" data-layer-id="omaha">Omaha, Nebraska</a>, a recent Vietnamese shopping center in <a class="location" data-layer-id="tysons">Northern Virginia</a>, or the <a class="location" data-layer-id="penn">Pennsylvania Avenue</a> core of Black Baltimore in Maryland. My research projects time and again focused on places of commercial engagement, where people of various social classes and differing economic status regularly rubbed shoulders. These might be individual merchants’ stalls along a street front or within large often open-air halls offering goods, sometimes on a permanent basis, sometimes only occasionally, sometimes formally and sometimes not. In parts of the world, market places can be hundreds or more years old. In others they are of recent origin or sporadic. Once such sites mainly offered daily necessities, food or animals or tools, for instance, to nearby populations. As economies matured, locations multiplied, became more stable and specialized, or were simply supplanted, as many have been in American cities in my lifetime, by huge, air-conditioned grocery stores selling pre-packaged and over-processed foods and by car-accessible shopping plazas and large enclosed and air-conditioned shopping malls for non-food products. However formed, public markets are culturally and historically constituted solutions to and expressions of public engagement and thus the character and quality of local civic life. </p>
+                </section>
+            <section id="1" class="scene" data-scene-id="place1" title="Scene 1">
+                <div class="figure figure_large" style="background-image:url(img/fig1.jpg);"></div>
+                <div class="caption"><a class="location" data-layer-id="fig1">Figure 1</a>. <i>Petersham, Massachusetts, c. 1835. Center villages formed around colonial meetinghouse lots in the first decades of the Nineteenth Century (Barber 1839)</i>
+                </div>
+                <p>In my graduate work during the 1970s and for some years following, I got lost looking at settlement patterns across New England, comparing what I observed on the ground with what I viewed on historical maps and with what I read in historical records. This triangulation of sources led me through a disciplined empirical seeking to come to understand that what we find in history and geography textbooks about the colonial New England village was an invented tradition, the places themselves not of colonial origin but post-Revolutionary War sites of small shops about an open common or green <i>{Fig. 1}</i>. New Englanders in the Early Republic were experiencing a commercial division of labor producing Walter Christaller’s notion of central places (Wood 1984) and explaining their good fortune in Transcendental terms (Wood 1991). I mapped, literally and figuratively, the way forward for historians and geographers too long believing that what we see today was invented out of whole cloth by Puritan settlers in the seventeenth century (Wood 1997a). </p>
+                </section>
+            <section id="2" class="scene" data-scene-id="place2" title="Scene 2">
+                <div class="row">
+                    <div class="figure col-12 col-sm-6 col-xs-6"
+                        style="background-size: contain; background-image:url(img/fig2a.jpg)"></div>
+                    <div class="figure col-12 col-sm-6 col-xs-6"
+                        style="background-size: contain; background-image:url(img/fig2b.jpg)"></div>
+                </div>
+                <div class="caption"><a class="location" data-layer-id="fig2">Figure 2</a>. <i>Omaha’ s Old Market, 2025 (Wood)</i>
+                    </div>
+                    <p>In my first faculty appointment at the University of Nebraska at Omaha in the late 1970s and early 1980s, I got lost walking the city to discern its spatial content and organization. I chaired the Omaha Landmark Preservation Commission and got lost there too. My wanderings led me to argue that we put too much energy into trying to salvage singular old houses, wonders from the railroad era when Omaha was one of the most important places in the country, each now set in a transformed landscape. I saw these remaining old houses lost at sea in a new landscape. On the other hand, Omaha’s Old Market, originally a food market, anchored a reusable zone of warehouses and remained organically valuable in drawing people downtown. The Commission challenged assumptions about what qualified for historic preservation, and we acted to preserve what it had become. Today the Old Market centers Omaha’s hugely successful Arts and Entertainment District <i>{Fig. 2.}</i>. As I wrote then to justify preservation—tongue in cheek and with attribution, probably apocryphal, to former First Lady, Mamie Eisenhower— “Things are more like they used to be now than they have ever been before” (Wood 1985a, 1985b). I also taught a seminar on making sense of change in the urban landscape, and students and I noted that pockets of the city were undergoing suburban-like development that needed interpretation (Wood 1988). Indeed, and for many unfortunately, the city soon demolished a grand rail-related warehouse district called <a class="location" data-layer-id="jobbers">Jobbers’ Canyon</a>  to allow a suburban-style corporate campus to emerge between the Old Market and the Missouri River, seeing value in demolishing the meaning of an older landscape.</p>
+            </section>
+            <section id="3" class="scene" data-scene-id="place3" title="Scene 3">
+                <div class="row">
+                    <div class="figure col-12 col-sm-6 col-xs-6"
+                        style="background-size: contain; background-image:url(img/fig3a.jpg)"></div>
+                    <div class="figure col-12 col-sm-6 col-xs-6"
+                        style="background-size: contain; background-image:url(img/fig3b.jpg)"></div>
+                </div>
+                <div class="caption"><a class="location" data-layer-id="fig3">Figure 3</a>. <i>Guangzhou Market, 1984 (Wood)</i>
+                    </div>
+                    <p>In 1984, I spent a semester teaching in <a class="location" data-layer-id="fig3">Guangzhou, China</a>, where I was largely free to get lost exploring the city. Although many people I encountered first took me for Russian, since they had encountered so few Americans at that point, they were exceedingly gracious, inviting me to appreciate their public spaces and the character and quality of their local public life. I became fascinated with Chinese versions of what Omaha’s Old Market had originally been, where fresh vegetables, live animals, and various things I could not always recognize were sold— think Wuhan wet markets of recent notoriety related to Covid’s origin <i>{Fig. 3}</i>. That whetted my appetite, no pun intended, to visit public markets everywhere. Growing up in the 1950s and 1960s in the eastside suburbs of <a class="location" data-layer-id="cleveland">Cleveland, Ohio</a>, I realized intuitively how uniquely the widespread use of automobiles had reshaped American landscapes in the sorts of places where most of us live today. The automobile was behind much commercial transformation—how and why the US had lost urban public markets like what Omaha’s Old Market had originally been. Or in the 1950s, when my father still worked in downtown Cleveland, my mother no longer went there to shop. The department stores had relocated to Cleveland’s shiny new Severance Center with a large parking lot, the first in Cleveland, but what soon every big city in America had to have. By the 1990s, when many malls of my childhood were already getting a bit long in the tooth and replaced by newer, mega-stores and massive malls in the farther reaches of American suburbs, social scientists wrote about malls as sites of a new civic life (Cohen 1996). Still, remnant public markets like Omaha’s Old Market began to proliferate as profitable artifacts, no longer necessarily selling fresh food products but serving as important reimagined sites of civic life all the same. Likewise, Chinatowns in cities across the United States remain hybrid markets, serving the local economic and social needs of Asian immigrants even as they serve as tourist attractions. San Francisco’s <a class="location" data-layer-id="chinatown">Chinatown</a> is the exemplar. </p>
+            </section>
+            <section id="4" class="scene" data-scene-id="place4" title="Scene 4">
+                <p>During the 1990s, when teaching at <a class="location" data-layer-id="gmu">George Mason University</a> in Virginia, I found myself lost in suburban Northern Virginia, much more dynamic and complex than my 1950s and 1960s Cleveland suburbs or those of my Omaha days in the 1970s and 1980s. Because of its exceeding wealth, built in good measure by its large federally funded military-industrial complex and its dynamic mix of immigrants, Northern Virginia had shed its Confederate past to become a post-modern American suburb, and it, too, was in need of interpretation (Wood 1990). <i>Washington Post</i> journalist Joel Garreau, referring specifically to <a class="location" data-layer-id="tysons">Tyson’s Corner</a>, then just outside the Washington Beltway and today in the center of vast suburban Northern Virginia, termed this new urban form an “edge city.” Where once downtowns pulled everyone into its center, now many people never needed to go there for work or shopping or social and political activities--and they did not (Garreau 1992). Garreau and I taught a field-based course on Northern Virginia as an exotic landscape, and I led field trips to introduce students and colleagues to the future of the American landscape, as I saw it then. We followed development of suburban markets from Arlington’s earliest automobile-oriented plazas near the Potomac River to the newest suburban forms well past <a class="location" data-layer-id="dulles">Dulles International Airport</a> (Wood 1994). Among the stops was <a class="location" data-layer-id="reston">Reston Town Center</a>, which had been developed, I argued, as an <i>un-enclosed</i> shopping center akin to a large outdoor public market, reflecting a kind of center city in the suburbs or reverse of suburbanization of center-city.</p>
+                <div class="row">
+                    <div class="figure col-12 col-sm-6 col-xs-6"
+                        style="background-size: contain; background-image:url(img/fig4a.jpg)"></div>
+                    <div class="figure col-12 col-sm-6 col-xs-6"
+                        style="background-size: contain; background-image:url(img/fig4b.jpg)"></div>
+                </div>
+                <div class="caption"><a class="location" data-layer-id="fig4">Figure 4</a>. <i>Eden Center, Falls Church, Va. 1995 (Wood)</i>
+                    </div>
+                    <p>While exploring Northern Virginia, I was also drawn to the Vietnamese presence, not urban neighborhoods <i>per se</i>; these refugees were not concentrated like nineteenth-century urban immigrant groups had been, but visible in stores and churches and cemeteries. In Falls Church, Virginia, where George Washington had been a vestryman, Vietnamese refugees had taken over a 1950s shopping plaza—linear, single-story building with multiple stores fronting on an automobile parking lot that pre-dated enclosed shopping malls in cities across the country. They named this place Eden Center after a retail and restaurant center in Saigon. These Vietnamese insisted on putting their own imprint on the landscape in a way that could be described as a Vietnamese version of a suburban Chinatown. Here refugees recreated aspects of Vietnamese civic life, including as a place of remembrance for the lost cause of the Vietnam War (Wood 1997b). <i>{Fig. 4.}</i> </p>
+            </section>
+            <section id="5" class="scene" data-scene-id="place5" title="Scene 5">
+                <p>I was told that the original Eden Center in Saigon was close to where government officials and American advisors, soldiers, and reporters had hung out during the war, so I had to visit it. I had spent a year in Vietnam as a combat engineer in what I refer to now as my extended involuntary and quite muddy field excursion, doing my absolute best never to get lost. I returned to Vietnam in 1998, free this time to get lost wandering retail districts with distinctive spatial patterns in Hanoi <i>{Fig. 5.}</i> and Ho Chi Minh City, colloquially still Saigon <i>{Fig. 6.}</i>. I studied the original Eden Center market to understand what refugees were trying to replicate (Wood 2001) <i>{Fig. 7.}</i>. Soon after, the American owner of Virginia’s Eden Center undertook redevelopment of what had become a valuable property, imposing a new design strongly Asian and copying the front of Saigon’s Ben Thanh Market <i>{Fig. 8.}</i>. If not exactly in the form of Saigon’s Eden Center, the new Eden Center exhibited the quality of civic life transplanted to an American suburb. I wrote a book chapter entitled “Making America at Eden Center” to celebrate this fascinating hybrid element of the American suburban landscape (Wood 2006).</p>
+                <div class="row">
+                    <div class="figure col-12 col-sm-6 col-xs-6"
+                        style="background-size: contain; background-image:url(img/fig5a.jpg)"></div>
+                    <div class="figure col-12 col-sm-6 col-xs-6"
+                        style="background-size: contain; background-image:url(img/fig5b.jpg)"></div>
+                </div>
+                <div class="caption">Figure 5. <i>Hanoi street markets, 1998 (Wood)</i>
+                    </div>
+                    <div class="figure figure_large" style="background-image:url(img/fig6.jpg);"></div>
+                <div class="caption"><a class="location" data-layer-id="fig6">Figure 6</a>. <i>Old Saigon’ s centrally located Ben Thanh Market, 1998 (Wood)</i>
+                </div>
+                <div class="row">
+                    <div class="figure col-12 col-sm-6 col-xs-6"
+                        style="background-size: contain; background-image:url(img/fig7a.jpg)"></div>
+                    <div class="figure col-12 col-sm-6 col-xs-6"
+                        style="background-size: contain; background-image:url(img/fig7b.jpg)"></div>
+                </div>
+                <div class="caption"><a class="location" data-layer-id="fig6">Figure 7</a>. <i>Eden Trading Company in Saigon is a large building on a central plaza called Eden and across from a hotel where American troops and news people lived during the war. It included the Queen Bee Restaurant, replicated in the 1970s in Arlington, Virginia. 1998 (Wood)</i>
+                    </div>
+                    <div class="figure figure_large" style="background-image:url(img/fig8.jpg);"></div>
+                <div class="caption">Figure 8. <i>The newly redeveloped Eden Center in Virginia, 1999 (Wood)</i>
+                </div>
+                    <p>Employing local field work with a healthy geographical imagination, coupled with disciplined empirical seeking for meaning, heavily informed my teaching and writing to this point in my career. I spent the decades, however, as a university provost, albeit occasionally teaching a class, leading a field trip, or lecturing on the New England village, Omaha’s Old Market, or Northern Virginia’s Eden Center. Rarely did a class not include an assignment to visit a local site where we walked about, asked how and for whom space was organized, who was there and who not, and what were these people doing? We would record our observations and used writing for analysis. This was my way of sharing the value of getting lost. I fondly remember an elementary school teacher, stunned to see that a manhole cover on an American suburban street was manufactured in India, suddenly recognizing that he could write a whole class assignment for his students on the meaning of that single manhole cover.</p>
+            </section>
+            <section id="6" class="scene" data-scene-id="place6" title="Scene 6">
+                <h3>Coming Full Circle</h3>
+                <p>At my last appointment at the <a class="location" data-layer-id="unibaltimore">University of Baltimore</a> in the 2010s, I found a community destitute of the kind of rich civic life available in public spaces with which most of us are generally familiar in the United States. Because of the color of their skin, many of our students and their families had long been discouraged from venturing into the kind of places that most contemporary Americans assume is available and creates a common experience. Getting lost with my students in their West Baltimore neighborhood, I came to understand how race was used historically to segregate people geographically. In West Baltimore, racism led to a highly segregated albeit comparatively thriving Black community along Pennsylvania Avenue before desegregation in the 1960s. <a class="location" data-layer-id="penn">Pennsylvania Avenue</a> was the heartbeat of Baltimore’s Black life then. United States Supreme Court Justice Thurgood Marshall grew up in the neighborhood, and Billie Holiday, Cab Calloway, and so many others regularly performed before mixed-race audiences at the Avenue’s <a class="location" data-layer-id="royal">Royal Theater</a>. Central to the district was the early Nineteenth-Century Avenue Market in a structure built in 1871, when the neighborhood was still largely White but, by the middle of the Twentieth Century, predominantly serving only local Black neighbors.</p>
+                <p>The first modern enclosed shopping mall in Baltimore, <a class="location" data-layer-id="mondawmin">Mondawmin Mall</a>, was built in 1956 nearby in then still White Baltimore. Black people were unwelcome there until after new federal public accommodations laws were enacted in 1965. After that, Pennsylvania Avenue neighbors were no longer constrained to shop only in stores catering to Blacks. In 1968, fair housing legislation made it more possible for them to live in formerly White neighborhoods, if they could afford to move. Large-scale changes overtook Baltimore in the 1970s. White flight and a suburbanizing industrial base meant many Whites no longer went to work or shop in the city. Black neighborhoods pushed northward toward Mondawmin Mall. That, and the assassination of Martin Luther King, Jr. and the 1968 Baltimore riots, that ensued all conspired to hollow out the Pennsylvania Avenue neighborhood and the <a class="location" data-layer-id="market">Avenue Market</a>. Ironically, efforts at urban redevelopment further depressed West Baltimore economically by driving out anyone who could afford to move, leaving the Avenue Market and Mondawmin Mall largely to Black customers least able to move away and with the least money to spend. Consequently, much of West Baltimore today, where Maryland governor Wes Moore is from and where author Ta-Nehisi Coates grew up, is marked by the absence of robust economic spaces of any kind.</p>
+                <p>The effect of where one could live, work, or shop created a kind of geographical strangulation of West Baltimore, and a paradox: We discriminate today against many people for failing to achieve what equal rights were supposed to have allowed them to achieve, and we do so exactly because the effects of past social and economic discrimination and consequent spatial segregation long left them out of the dominant economy and restricted participation in mainstream civic life, making it more difficult for them to ever achieve what we expected them to achieve. This is what is implied by structural or systemic racism: We blame people for not now doing what we had long constrained them from being able to do in the first place (Wood 2017).</p>
+                <p>When Freddie Gray died in 2015 in West Baltimore, not far from the university, we opened the campus to a community-wide course we called Divided Baltimore: We asked how historic discrimination and spatial segregation of Black Americans in all facets of life had affected civic life, including access to housing, education, healthcare, employment, transportation, the justice system, clean environments, and, of course, retail activities. Why, as well, was once lively West Baltimore, almost five decades after the 1968 riots and locale of the acclaimed TV series, <i>The Wire</i>, still a segregated shell of a neighborhood and the Avenue Market, at best, a shell for limited commerce? Community members, government officials, nonprofit and business leaders, as well as faculty members and students, anyone who in some fashion had tried to make sense of segregated Baltimore, spoke their mind, and we learned something. Community members shared their deep desire not to escape but to fix their neighborhoods, to build economic and social spaces to support robust neighborhood life (Wood 2019). There is no simple solution here, if we think teleologically, where the present situation is deemed a pre-determined outcome, not the product of a set of contingent circumstances. People in West Baltimore believe they can make a difference for themselves, that they can find a way out, if they have access to tools and necessary good will. Efforts today at invigorating the old Avenue Market exemplify this goal and are to me the essence of “reparations,” of repairing the effects of past discrimination that continue to impede robust community (Reimagine Avenue Market, 2025).</p>
+            </section>
+            <section id="7" class="scene" data-scene-id="place7" title="Scene 7">
+            <h3>Moving On</h3>
+            <p>As I reflect on getting lost, I have come fully to appreciate that markets—they are everywhere if you look— are important reflections of civic life, where people engage with one another in the day-to-day life of their communities. Not surprisingly, I am always eager to recommend to friends travelling locally or abroad public markets, bazaars and souks, and other forms of casual public gathering exemplifying the character and quality of civic life. Nor do you have to go far to discover new forms of public markets brimming with civic life. Think of buildings newly built or converted into modern culinary space, an urban food court with open seating for scores of people usually including a bar and surrounded by multiple independent prepared-food vendors, many purveyors of ethnic food. They seem to be sprouting everywhere. The R. House in Baltimore and the Southern Market in Lancaster, Pennsylvania, are examples I’ve recently visited.</p>
+            <div class="figure figure_large" style="background-image:url(img/fig9.jpg);"></div>
+                <div class="caption"><a class="location" data-layer-id="fig9">Figure 9</a>. <i>Lancaster Central Market, 2025 (Wood)</i>
+                </div>
+            <h3>Coda</h3>
+            <p>Now in retirement in Lancaster, Pennsylvania, rarely does a week go by without a trip to the Lancaster Central Market, America’s oldest continuing and formally chartered public market, in the same downtown location since 1730 and the same building since 1889 <i>{Fig. 9}</i>. The Central Market was recently celebrated as the number one historic market in the United States by <i>Food and Wine Magazine</i> (Pramik 2025). As in so many Pennsylvania towns, the Central Market is functionally a part of the city’s original market square, Penn Square, where King and Queen Streets intersect (Zelinsky 1977). As I write, we Lancastrians often gather there loudly protesting assault on our democracy and personal freedoms, just as we might have done 250 years ago.</p>
+            <h3>About the Author</h3>
+            <p>Joseph S. Wood <i>{Fig. 10.}</i> is professor emeritus of public and international affairs and former provost at the University of Baltimore. He previously taught at the University of Nebraska at Omaha; George Mason University, where he was founding chair of the geography department and vice provost for academic affairs; and the University of Southern Maine, where he was provost and interim president. He served on the American Geographical Society Council from 1995 until 2017. He is a member of the editorial board of the <i>American Association of Geographers Review of Books</i> and continues to haunt public markets of all kinds.</p>
+            <div class="figure figure_large" style="background-image:url(img/fig10.jpg);"></div>
+                <div class="caption">Figure 10. <i>The author, 2025</i>
+                </div>
+
+            </br>
+              </br>
+                </br>
+                <h3>References:</h3>
+                <ul class="references">
+                   <li>Barber, J. W. (1839). <i>Historical Collections of Massachusetts</i>. Dorr, Howland and Co. Worcester, MA.</li>
+                   <li>Cohen, L. (1996). From Town Center to Shopping Center: The Reconfiguration of Community Marketplaces in Postwar America. <i>The American Historical Review</i>, 101(4):1050–1081. doi.org/10.2307/2169634</li>
+                   <li>Dewey, J., 1916. The Significance of Geography and History. In <i>Democracy and Education 1916: The Middle Works of John Dewey, 1899-1924</i>, 9: 215-226. Carbondale and Edwardsville: Southern Illinois University Press, 1980.</li>
+                   <li>Garreau, J., 1992. <i>Edge City: Life on the New Frontier</i>. New York: Anchor Books.</li>
+                   <li>Gandy, M., 2024. Attentive Observation: Walking, Listening, Staying Put. <i>Annals of the American Association of Geographers</i>, 114:7:1386-1404.</li>
+                   <li>Horowitz, H, Ed., 1997. <i>Landscape in Sight: Looking at America; John Brinkerhoff Jackson</i>. New Haven: Yale University Press.</li>
+                   <li>Marsh, B., and Wood, J. S., 2021. Peirce F. Lewis, 1927-2018. <i>Annals of the American Association of Geographers</i>, 111:625-632.</li>
+                   <li>Pohl, L., and Helbrecht, I., 2025. Geographical Sensemaking: Situating, Relating, and Positioning as Spatial Practices Between Self and World. <i>Annals of the American Association of Geographers</i>, 115(7):1489-1505. doi.org/10.1080/24694452.2025.2493825.</li>
+                   <li>Pramik, W., 2025. “America’s Most Historic Markets, From St, Louis to Seattle.” https://www.foodandwine.com/americas-most-historic-markets-11784233</li>
+                   <li>Reimagine Avenue Market, 2025. https://www.reimagineavenuemarket.com</li>
+                   <li>Thoreau, H. D., 1845. <i>Walden, or, Life in the Woods</i>. Boston: Tichnor and Fields.</li>
+                   <li>Thoreau, H. D., 1862. Wild Apples: The History of the Apple Tree. <i>The Atlantic Monthly</i>, 10 (5): 513-526.</li>
+                   <li>Wright, J. K., 1947. <i>Terrae Incognitae</i>: The Place of the Imagination in Geography. <i>Annals of the Association of American Geographers</i>, 37: 1-15.</li>
+                   <li>Wood, J. S., 1984. Elaboration of a Settlement System: The New England Village in the Federal Period. <i>Journal of Historical Geography</i>, l0:33l-356.</li>
+                   <li>Wood, J. S., 1985a. Hollow Victories? Ruminations on Historic Preservation. <i>Transition</i>, 15(3):15-20.</li>
+                   <li>Wood, J. S., 1985b. Nothing Should Stand for Something That Never Existed. <i>Places: Quarterly Journal of Environmental Design</i>, 2(2):81-87.</li>
+                   <li>Wood, J. S., 1988. Suburbanization of Center City. <i>Geographical Review</i>, 78:325-330.</li>
+                   <li>Wood, J. S., 1990. The Great Escape: Has Suburbia Been Transformed from Paradise to Paradox? <i>Action</i> [Northern Virginia Building Industry Association], May/June: 22-30.</li>
+                   <li>Wood, J. S. 1991. "Build, Therefore, Your Own World”: The New England Village as Settlement Ideal.” <i>Annals of the Association of American Geographers</i>, 81:32-50.</li>
+                   <li>Wood, J. S., 1994. <i>A Guide to the Evolving Landscapes of Northern Virginia</i>. Unpublished.</li>
+                   <li>Wood, J. S., 1997a. <i>The New England Village</i>. Johns Hopkins University Press, 1997.</li>
+                   <li>Wood, J. S., 1997b. Vietnamese American Place Making in Northern Virginia. <i>Geographical Review</i>, 87:58-72.</li>
+                   <li>Wood, J. S., 2001. Return to Vietnam. <i>Focus on Geography</i>. 46:8-12.</li>
+                   <li>Wood, J. S., 2006. Making America at Eden Center. In <i>From Urban Enclave to Ethnic Suburb: New Asian Communities in Pacific Rim Countries</i>. Edited by Wei Li. 23-40. Honolulu: University of Hawai’i Press.</li>
+                   <li>Wood, J. S., 2010. Creating the Landscape of Civil Society. In <i>Making of the American Landscape</i>. 2nd Ed. Edited by Michael Conzen., 357-386. New York: Routledge.</li>
+                   <li>Wood, J.S., 2015. Wilbur Zelinsky, 1921–2013: A Curiosity Too Urgent to Be Throttled. <i>Annals of the Association of American Geographers</i>, 105:620-626.</li>
+                   <li>Wood, J. S., 2017. Reading Baltimore in the Breach. <i>American Association of Geographers Review of Books</i>. 5(2):126-137.</li>
+                   <li>Wood, J. S., 2019. Intellectuals in the Public: Uniting a Divided Baltimore. <i>The Professional Geographer</i>, 71:157-160.</li>
+                   <li>Zelinsky, W. 1977. The Pennsylvania Town: An Overdue Geographical Account. <i>The Geographical Review</i>, 67(2): 127-147.</li>
+                </ul>
+            </section>
+            <div class="row footer-row"></div>
+        </div>
+    </div>
+    <div id="progress">
+        <div id="bar"></div>
+    </div>
+    <div id="bar-top"></div>
+    <div id="bar-bottom"></div>
+    <!-- inject:templates:html -->
+    <!-- endinject -->
+    <script src="../../../js/combined.js"></script>
+
+
+    <script>
+        Focus.Map.defaultOptions = {
+            color: 'rgb(255, 255, 255)',
+            fillColor: 'rgb(255, 255, 255)',
+            radius: 7,
+            weight: 8,
+            fillOpacity: 1,
+            opacity: 0.5
+        };
+
+        var pointStyle = {
+            "weight": 9,
+            "radius": 9,
+            "fillOpacity": .8
+        }
+
+        var figureStyle = {
+            "weight": 9,
+            "radius": 9,
+            "fillOpacity": .8
+        }
+
+
+
+
+        /*
+        	orinoco 	-61.21821863851303, 8.587327915943712
+        	eurasia 	68.24072497633217, 58.2020551391387
+        	galapagos 	-90.7095803077446, -0.2955465784474337
+        	concord 	-71.3649534051046, 42.46031152446302
+        	usm 		-70.27673100903117, 43.660845884679226
+        	omaha 	-95.93830065874093, 41.25973902440487
+        	tysons		-77.23141280537723, 38.919005375035056
+        	penn  	-76.63739763455563, 39.305756668784504
+        	fig1 	-72.18639690518823, 42.48846573259519
+        	nebraska 	-96.01137484231697, 41.257929571973094
+        	fig2 	-95.93121219253206, 41.25584992608806
+        	jobbers 	-95.92549087046172, 41.25440574281781
+        	fig3 	113.43366397061213, 23.07109858339087
+        	cleveland 	-81.59405053772569, 41.51462461634445
+        	chinatown 	-122.40721514184135, 37.79510243867709
+        	gmu 	-77.30716706227636, 38.830565746338436
+        	tysons		-77.23141280537723, 38.919005375035056
+        	dulles 		-77.44801890502347, 38.95465465738639
+        	reston 		-77.36120516317293, 38.958842910899776
+        	fig4 		-77.15408417428216, 38.87432814258135
+        	fig5 		105.85183707298972, 21.03234593121366
+        	fig6 	106.6980295617881, 10.772440658679075
+        	royal 		-76.63995741511258, 39.30812167738442
+        	market 	-76.63553815991861, 39.303695712879026
+        	mondawmin 		-76.6544536566977, 39.317151042880894
+        	unibaltimore		-76.61741322296005, 39.305086503416334
+        	fig9 	-76.30647041716806, 40.03826966600236
+        */
+
+
+
+
+        var scenes = {
+            "features": [
+            {
+                    "id": "orinoco",
+                    "type": "geojson",
+                    "data": {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [-61.21821863851303, 8.587327915943712]
+                        },
+                        "properties": {
+                            'name': 'Orinoco River'
+
+                        },
+                    },
+                    "style": figureStyle
+                },{
+                    "id": "siberia",
+                    "type": "geojson",
+                    "data": {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [68.24072497633217, 58.2020551391387]
+                        },
+                        "properties": {
+                            'name': 'Siberia'
+
+                        },
+                    },
+                    "style": figureStyle
+                },
+                {
+                    "id": "galapagos",
+                    "type": "geojson",
+                    "data": {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [-90.7095803077446, -0.2955465784474337]
+                        },
+                        "properties": {
+                            'name': 'Galapagos Islands'
+
+                        },
+                    },
+                    "style": figureStyle
+                },
+                {
+                    "id": "concord",
+                    "type": "geojson",
+                    "data": {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [-71.3649534051046, 42.46031152446302]
+                        },
+                        "properties": {
+                            'name': 'Concord, MA'
+
+                        },
+                    },
+                    "style": figureStyle
+                },
+                {
+                    "id": "usm",
+                    "type": "geojson",
+                    "data": {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [-70.27673100903117, 43.660845884679226]
+                        },
+                        "properties": {
+                            'name': 'University of Southern Maine'
+
+                        },
+                    },
+                    "style": figureStyle
+                },
+                {
+                    "id": "omaha",
+                    "type": "geojson",
+                    "data": {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [-95.93830065874093, 41.25973902440487]
+                        },
+                        "properties": {
+                            'name': 'Omaha, NE'
+
+                        },
+                    },
+                    "style": figureStyle
+                },
+                {
+                    "id": "tysons",
+                    "type": "geojson",
+                    "data": {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [-77.23141280537723, 38.919005375035056]
+                        },
+                        "properties": {
+                            'name': 'Tysons Corner, VA'
+
+                        },
+                    },
+                    "style": figureStyle
+                },
+                {
+                    "id": "penn",
+                    "type": "geojson",
+                    "data": {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [-76.63739763455563, 39.305756668784504]
+                        },
+                        "properties": {
+                            'name': 'Pennsylvania Avenue'
+
+                        },
+                    },
+                    "style": figureStyle
+                },
+                {
+                    "id": "fig1",
+                    "type": "geojson",
+                    "data": {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [-72.18639690518823, 42.48846573259519]
+                        },
+                        "properties": {
+                            'name': 'Figure 1'
+
+                        },
+                    },
+                    "style": figureStyle
+                },
+                {
+                    "id": "nebraska",
+                    "type": "geojson",
+                    "data": {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [-96.01137484231697, 41.257929571973094]
+                        },
+                        "properties": {
+                            'name': 'Nebraska'
+
+                        },
+                    },
+                    "style": figureStyle
+                },
+                {
+                    "id": "fig2",
+                    "type": "geojson",
+                    "data": {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [-95.93121219253206, 41.25584992608806]
+                        },
+                        "properties": {
+                            'name': 'Figure 2'
+
+                        },
+                    },
+                    "style": figureStyle
+                },
+                {
+                    "id": "jobbers",
+                    "type": "geojson",
+                    "data": {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [-95.92549087046172, 41.25440574281781]
+                        },
+                        "properties": {
+                            'name': 'Jobbers Canyon'
+
+                        },
+                    },
+                    "style": figureStyle
+                },
+                {
+                    "id": "fig3",
+                    "type": "geojson",
+                    "data": {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [113.43366397061213, 23.07109858339087]
+                        },
+                        "properties": {
+                            'name': 'Figure 3'
+
+                        },
+                    },
+                    "style": figureStyle
+                },
+                {
+                    "id": "cleveland",
+                    "type": "geojson",
+                    "data": {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [-81.59405053772569, 41.51462461634445]
+                        },
+                        "properties": {
+                            'name': 'Cleveland, OH'
+
+                        },
+                    },
+                    "style": figureStyle
+                },
+                {
+                    "id": "chinatown",
+                    "type": "geojson",
+                    "data": {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [-122.40721514184135, 37.79510243867709]
+                        },
+                        "properties": {
+                            'name': 'Chinatown'
+
+                        },
+                    },
+                    "style": figureStyle
+                },
+                {
+                    "id": "gmu",
+                    "type": "geojson",
+                    "data": {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [-77.30716706227636, 38.830565746338436]
+                        },
+                        "properties": {
+                            'name': 'George Mason University'
+
+                        },
+                    },
+                    "style": figureStyle
+                },
+                {
+                    "id": "dulles",
+                    "type": "geojson",
+                    "data": {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [-77.44801890502347, 38.95465465738639]
+                        },
+                        "properties": {
+                            'name': 'Dulles International Airport'
+
+                        },
+                    },
+                    "style": figureStyle
+                },
+                {
+                    "id": "reston",
+                    "type": "geojson",
+                    "data": {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [-77.36120516317293, 38.958842910899776]
+                        },
+                        "properties": {
+                            'name': 'Reston, VA'
+
+                        },
+                    },
+                    "style": figureStyle
+                },
+                {
+                    "id": "fig4",
+                    "type": "geojson",
+                    "data": {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [-77.15408417428216, 38.87432814258135]
+                        },
+                        "properties": {
+                            'name': 'Figure 4'
+
+                        },
+                    },
+                    "style": figureStyle
+                },
+                {
+                    "id": "fig5",
+                    "type": "geojson",
+                    "data": {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [105.85183707298972, 21.03234593121366]
+                        },
+                        "properties": {
+                            'name': 'Figure 5'
+
+                        },
+                    },
+                    "style": figureStyle
+                },
+                {
+                    "id": "fig6",
+                    "type": "geojson",
+                    "data": {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [106.6980295617881, 10.772440658679075]
+                        },
+                        "properties": {
+                            'name': 'Figure 6'
+
+                        },
+                    },
+                    "style": figureStyle
+                },
+                {
+                    "id": "royal",
+                    "type": "geojson",
+                    "data": {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [-76.63995741511258, 39.30812167738442]
+                        },
+                        "properties": {
+                            'name': 'Royal Theater'
+
+                        },
+                    },
+                    "style": figureStyle
+                },
+                {
+                    "id": "market",
+                    "type": "geojson",
+                    "data": {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [-76.63553815991861, 39.303695712879026]
+                        },
+                        "properties": {
+                            'name': 'Avenue Market'
+
+                        },
+                    },
+                    "style": figureStyle
+                },
+                {
+                    "id": "mondawmin",
+                    "type": "geojson",
+                    "data": {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [-76.6544536566977, 39.317151042880894]
+                        },
+                        "properties": {
+                            'name': 'Mondawmin Mall'
+
+                        },
+                    },
+                    "style": figureStyle
+                },
+                {
+                    "id": "unibaltimore",
+                    "type": "geojson",
+                    "data": {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [-76.61741322296005, 39.305086503416334]
+                        },
+                        "properties": {
+                            'name': 'University of Baltimore'
+
+                        },
+                    },
+                    "style": figureStyle
+                },
+                {
+                    "id": "fig9",
+                    "type": "geojson",
+                    "data": {
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [-76.30647041716806, 40.03826966600236]
+                        },
+                        "properties": {
+                            'name': 'Figure 9'
+
+                        },
+                    },
+                    "style": figureStyle
+                }
+            ],
+            "scenes":
+                [
+                 {
+                        "id": "place0",
+                        "baseLayer": [{
+                            "type": "esri-basemap",
+                            "url": "Imagery",
+                            "options": {
+                                "detectRetina": true,
+
+                            }
+                        }],
+                        "zoom": 2,
+                        "layers": [
+                            { "idRef": "orinoco" },
+                            { "idRef": "siberia" },
+                            { "idRef": "galapagos" },
+                            { "idRef": "concord" },
+                            { "idRef": "usm" },
+                            { "idRef": "omaha" },
+                            { "idRef": "tysons" },
+                            { "idRef": "penn" }
+                        ]
+                    },
+                    {
+                        "id": "place1",
+                        "baseLayer": [{
+                            "type": "esri-basemap",
+                            "url": "Imagery",
+                            "options": {
+                                "detectRetina": true,
+
+                            }
+                        }],
+                        "zoom": 17,
+                        "layers": [
+                            { "idRef": "fig1" }
+                        ]
+                    },
+                    {
+                        "id": "place2",
+                        "baseLayer": [{
+                            "type": "esri-basemap",
+                            "url": "Imagery",
+                            "options": {
+                                "detectRetina": true,
+
+                            }
+                        }],
+                        "zoom": 15.5,
+                        "layers": [
+                            { "idRef": "fig2" },
+                            { "idRef": "jobbers" }
+                        ]
+                    },
+                    {
+                        "id": "place3",
+                        "baseLayer": [{
+                            "type": "esri-basemap",
+                            "url": "Imagery",
+                            "options": {
+                                "detectRetina": true,
+
+                            }
+                        }],
+                        "zoom": 16,
+                        "layers": [
+                            { "idRef": "fig3" },
+                            { "idRef": "cleveland" },
+                            { "idRef": "chinatown" }
+                        ]
+                    },
+                    {
+                        "id": "place4",
+                        "baseLayer": [{
+                            "type": "esri-basemap",
+                            "url": "Imagery",
+                            "options": {
+                                "detectRetina": true,
+
+                            }
+                        }],
+                        "zoom": 16,
+                        "layers": [
+                            { "idRef": "gmu" },
+                            { "idRef": "tysons" },
+                            { "idRef": "dulles" },
+                            { "idRef": "reston" },
+                            { "idRef": "fig4" }
+                        ]
+                    },
+                    {
+                        "id": "place5",
+                        "baseLayer": [{
+                            "type": "esri-basemap",
+                            "url": "Imagery",
+                            "options": {
+                                "detectRetina": true,
+
+                            }
+                        }],
+                        "zoom": 17,
+                        "layers": [
+                        { "idRef": "fig6" }
+                        ]
+                    },
+                    {
+                        "id": "place6",
+                        "baseLayer": [{
+                            "type": "esri-basemap",
+                            "url": "Imagery",
+                            "options": {
+                                "detectRetina": true,
+
+                            }
+                        }],
+                        "zoom": 18,
+                        "layers": [
+                            { "idRef": "penn" },
+                            { "idRef": "royal" },
+                            { "idRef": "market" },
+                            { "idRef": "mondawmin" },
+                            { "idRef": "unibaltimore" }
+                        ]
+                    },
+                    {
+                        "id": "place7",
+                        "baseLayer": {
+                            "type": "esri-basemap",
+                            "url": "Imagery"
+                        },
+                        "zoom": 18,
+                        "layers": [
+                            { "idRef": "fig9" }
+                        ]
+                    }
+                ]
+        };
+    </script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-79613259-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    <script>
+        $(document).ready(function () {
+
+            $('#nav li.previous a').on('click', function (e) {
+                e.preventDefault();
+                var $prev = $('#nav').find('.sections li.active').prev();
+
+                if (!$prev.hasClass('previous')) {
+                    $prev.find('a').click();
+                }
+            });
+
+            $('#nav li.next a').on('click', function (e) {
+                e.preventDefault();
+                var $next = $('#nav').find('.sections li.active').next();
+
+                if (!$next.hasClass('next')) {
+                    $next.find('a').click();
+                }
+            });
+
+            document.onkeydown = function (e) {
+                if (e.keyCode == '38') {
+                    // up arrow
+                    $('#nav li.previous a').click();
+                } else if (e.keyCode == '40') {
+                    // down arrow
+                    $('#nav li.next a').click();
+                }
+            };
+
+            var overviewMap = new Focus.Views.OverviewMapView({
+                model: new Backbone.Model({
+                    initialScene: new Focus.Models.SceneModel({
+                        baseLayer: {
+                            "type": "esri-basemap",
+                            "url": "NationalGeographic",
+                        },
+                        center: [0, 0],
+                        zoom: 10,
+                        showAttribution: false
+                    })
+                }),
+                showCenterPoint: true
+            });
+            var sceneManager = new Focus.Views.SceneManagerView({
+                el: $('body'),
+                initialScene: {
+                    baseLayer: {
+                        "type": "esri-basemap",
+                        "url": "NationalGeographic"
+                    },
+                    center: [38.628369, -90.199242],
+                    zoom: 10,
+                    zoomDelta: 3,
+                    markerZoomAnimation: false
+                },
+                navigatorClass: Focus.Views.ScrollingSceneNavigator,
+                mapEngineClass: Focus.Views.LeafletMapEngine
+            });
+
+            var shareView = new Focus.Views.ShareView();
+            shareView.render();
+        });
+
+    </script>
+</body>
+
+</html>
